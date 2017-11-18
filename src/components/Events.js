@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import request from 'superagent';
 
 class Events extends Component {
   constructor(props) {
@@ -27,7 +26,7 @@ class Events extends Component {
     return (
       <div className="Events" style={eventsstyles}>
         <h1>Upcomming Events</h1>
-        <iframe src={iframelink}
+        <iframe title="events" src={iframelink}
         style={iframestyles}></iframe>
       </div>
     );

@@ -26,7 +26,7 @@ class News extends Component {
     return (
       <div className="News" style={eventsstyles}>
         <h1>Recent News</h1>
-        <iframe src={iframelink}
+        <iframe title="news" src={iframelink}
         style={iframestyles}></iframe>
       </div>
     );
