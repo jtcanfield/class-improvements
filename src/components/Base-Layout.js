@@ -30,9 +30,11 @@ export default class BaseLayout extends Component {
     }
 
     return (
-      <div className="body" style={base_layer_styles}>
+      <div style={base_layer_styles}>
         <Header />
-        {this.props.children}
+        <div className="body">
+          {this.props.children}
+        </div>
         <Footer />
       </div>
     );
