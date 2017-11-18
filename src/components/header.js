@@ -34,6 +34,9 @@ class Header extends Component {
           <NavLink className="verti-center" to="/iwoc">
             <input className='btn btn-link font-size-25px' type='submit' value='IWOC'/>
           </NavLink>
+          <NavLink className="verti-center" to="/donate">
+            <input className='btn btn-link font-size-25px' type='submit' value='Donate'/>
+          </NavLink>
         </div>
       </div>
     );
