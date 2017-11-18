@@ -9,13 +9,6 @@ class Events extends Component {
   componentWillMount(){
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
-  componentDidMount(){
-    request
-      .get(`graph.facebook.com/v2.11/1587504814641018`)
-      .set({"access_token": "196378587576073"})
-       .end((err, res) => {
-       })
-  }
   render() {
     let eventsstyles = {
       "margin":"0 auto",
