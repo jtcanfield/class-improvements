@@ -14,6 +14,11 @@ class Contact extends Component {
     this.submitform=this.submitform.bind(this);
   }
   componentWillMount(){
+    request
+      .post(`http://localhost:5000/wakeup`)
+      .end((err, res) => {
+        console.log(res.text);
+      })
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   updateFromField(stateKey) {
