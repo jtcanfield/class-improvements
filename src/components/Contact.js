@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import request from 'superagent';
 
 class Contact extends Component {
   constructor(props) {
@@ -21,7 +22,19 @@ class Contact extends Component {
     }
   }
   submitform(event){
-    // event.preventDefault();
+    var data = {
+      email: this.state.email,
+      phone: this.state.phone,
+      message: this.state.message
+    }
+    request
+      .post(`http://localhost:5000/sendemail`)
+      .send(data)
+      .end((err, res) => {
+        console.log(err);
+        console.log(res);
+      })
+      event.preventDefault();
   }
   render() {
     let eventsstyles = {
@@ -64,7 +77,6 @@ class Contact extends Component {
             placeholder="message"
             required="true"/>
           </div>
-          {this.state.message ? this.state.message : ""}<br/>
           <div className="form-group pull-right">
             <button className="btn btn-primary btn-lg" type="submit" onClick={event => this.submitform(event)}>Submit</button>
           </div>
