@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink, Link, Redirect } from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
@@ -11,7 +12,21 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <h1>HEADER</h1>
+        <NavLink className="verti-center" to="/">
+          <input className='btn btn-link font-size-25px' type='submit' value='Home'/>
+        </NavLink>
+        <NavLink className="verti-center" to="/">
+          <input className='btn btn-link font-size-25px' type='submit' value='About'/>
+        </NavLink>
+        <NavLink className="verti-center" to="/">
+          <input className='btn btn-link font-size-25px' type='submit' value='News'/>
+        </NavLink>
+        <NavLink className="verti-center" to="/">
+          <input className='btn btn-link font-size-25px' type='submit' value='Contact'/>
+        </NavLink>
+        <NavLink className="verti-center" to="/">
+          <input className='btn btn-link font-size-25px' type='submit' value='Events'/>
+        </NavLink>
       </div>
     );
   }
