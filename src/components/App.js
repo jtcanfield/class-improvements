@@ -21,20 +21,18 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="AppInsideProvider">
-          <BrowserRouter>
-            <BaseLayout>
-              <Switch>
-                <Route path="/about" render={(props) => ( <About/> )}/>
-                <Route path="/news" render={(props) => ( <News/> )}/>
-                <Route path="/contact" render={(props) => ( <Contact/> )}/>
-                <Route path="/events" render={(props) => ( <Events/> )}/>
-                <Route path="/iwoc" render={(props) => ( <IWOC/> )}/>
-                <Route path="/" render={(props) => ( <Homepage/> )}/>
-              </Switch>
-            </BaseLayout>
-          </BrowserRouter>
-        </div>
+        <BrowserRouter>
+          <BaseLayout>
+            <Switch>
+              <Route path="/about" render={(props) => ( <About/> )}/>
+              <Route path="/news" render={(props) => ( <News/> )}/>
+              <Route path="/contact" render={(props) => ( <Contact/> )}/>
+              <Route path="/events" render={(props) => ( <Events/> )}/>
+              <Route path="/iwoc" render={(props) => ( <IWOC/> )}/>
+              <Route path="/" render={(props) => ( <Homepage/> )}/>
+            </Switch>
+          </BaseLayout>
+        </BrowserRouter>
       </Provider>
     );
   }
