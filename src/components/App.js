@@ -5,6 +5,8 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import request from 'superagent';
 import allReducers from '../reducers/indexReducer.js';
+import BaseLayout from './Base-Layout.js';
+import Homepage from './Homepage.js';
 
 const store = createStore(
     allReducers,
@@ -16,9 +18,9 @@ class App extends Component {
       <Provider store={store}>
         <div className="AppInsideProvider">
           <BrowserRouter>
-            <BaseLayout template={this.state.template}>
+            <BaseLayout>
               <Switch>
-                <Route exact path="/canigrow-frontend/" render={(props) => ( <Homepage allplantdata={this.state.allplantdata}/> )}/>
+                <Route exact path="/" render={(props) => ( <Homepage/> )}/>
               </Switch>
             </BaseLayout>
           </BrowserRouter>
