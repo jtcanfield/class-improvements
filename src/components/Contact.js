@@ -8,6 +8,7 @@ class Contact extends Component {
       height: '0',
       email: "",
       phone: "",
+      message: "",
     };
     this.submitform=this.submitform.bind(this);
   }
@@ -53,6 +54,14 @@ class Contact extends Component {
             <input type="tel" onChange={this.updateFromField('phone')}
             value={this.state.phone}
             placeholder="phone"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <h6>Message:</h6>
+            <textarea type="text" rows="4" cols="50"
+            onChange={this.updateFromField('message')}
+            value={this.state.message}
+            placeholder="message"
             required="true"/>
           </div>
           {this.state.message ? this.state.message : ""}<br/>
