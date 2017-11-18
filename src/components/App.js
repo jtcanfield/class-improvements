@@ -6,7 +6,7 @@ import {createStore} from 'redux';
 import request from 'superagent';
 import allReducers from '../reducers/indexReducer.js';
 import BaseLayout from './Base-Layout.js';
-import Homepage from './homepage.js';
+import Homepage from './Homepage.js';
 
 const store = createStore(
     allReducers,
@@ -24,7 +24,7 @@ class App extends Component {
                 <Route path="/" render={(props) => ( <Homepage/> )}/>
                 <Route path="/" render={(props) => ( <Homepage/> )}/>
                 <Route path="/" render={(props) => ( <Homepage/> )}/>
-                <Route exact path="/" render={(props) => ( <Homepage/> )}/>
+                <Route path="/" render={(props) => ( <Homepage/> )}/>
               </Switch>
             </BaseLayout>
           </BrowserRouter>
