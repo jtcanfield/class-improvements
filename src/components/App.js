@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import cookie from 'react-cookies';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
-import request from 'superagent';
 import allReducers from '../reducers/indexReducer.js';
 import BaseLayout from './Base-Layout.js';
 import Homepage from './Homepage.js';
