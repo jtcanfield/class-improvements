@@ -63,6 +63,17 @@ class Contact extends Component {
       "frameborder":"0",
       "allowTransparency":"true",
     }
+    let textareastyle = {
+      "width":`70%`,
+      "border":"1px solid black",
+    }
+    let submitbutton = {
+      "width":`300px`,
+      "backgroundColor":`red`,
+      "fontSize":`24px`,
+      "color":`white`,
+      "border":`0`,
+    }
     return (
       <div className="Contact" style={eventsstyles}>
         <h1>Contact Us</h1>
@@ -70,21 +81,23 @@ class Contact extends Component {
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <h6>Email:</h6>
-            <input type="email" onChange={this.updateFromField('email')}
+            <input style={textareastyle}
+            type="email" onChange={this.updateFromField('email')}
             value={this.state.email}
             placeholder="email"
             required="true"/>
           </div>
           <div className="form-group">
             <h6>Phone:</h6>
-            <input type="tel" onChange={this.updateFromField('phone')}
+            <input style={textareastyle}
+            type="tel" onChange={this.updateFromField('phone')}
             value={this.state.phone}
             placeholder="phone"
             required="true"/>
           </div>
           <div className="form-group">
             <h6>Message:</h6>
-            <textarea type="text" rows="5" cols="34"
+            <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('message')}
             value={this.state.message}
             placeholder="message"
@@ -92,9 +105,12 @@ class Contact extends Component {
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
           <br/><div className="form-group pull-right">
-            <button className="btn btn-primary btn-lg" type="submit" onClick={event => this.submitform(event)}>Submit</button>
+            <button style={submitbutton} type="submit" onClick={event => this.submitform(event)}>
+              Send Message
+            </button>
           </div>
         </form>
+        <br/><br/>
         <iframe title="events" src={iframelink}
         style={iframestyles}></iframe>
       </div>
