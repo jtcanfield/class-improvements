@@ -74,7 +74,7 @@ class Contact extends Component {
       "backgroundColor":`red`,
       "fontSize":`24px`,
       "color":`white`,
-      "border":`0`,
+      "border":`1px solid black`,
     }
     let leftaligned = {
       "textAlign":"left",

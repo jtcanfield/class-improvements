@@ -32,6 +32,7 @@ label {
 }
 
 .body > div {
+  text-align: center;
   max-width: 900px;
   margin: 0 auto;
   padding: 0px 10px;
@@ -48,12 +49,12 @@ iframe{
 }
 
 .Header{
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #847878;
   text-align: center;
 }
 
 .Footer{
-  border-top: 1px solid red;
+  padding: 20px 0;
   text-align: center;
 }
 
