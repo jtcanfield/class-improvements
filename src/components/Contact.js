@@ -70,7 +70,7 @@ class Contact extends Component {
       "backgroundColor":`red`,
       "fontSize":`24px`,
       "color":`white`,
-      "border":`1px solid black`,
+      "border":`0`,
     }
     return (
       <div className="Contact">

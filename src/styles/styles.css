@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6{
   color: red;
 }
 
+h4, p, .form-group{
+  padding-top: 1rem;
+}
+
 label {
   text-align: left;
   width: 100%;
@@ -40,6 +44,7 @@ label {
 
 iframe{
   margin: 0px -10px;
+  padding-top: 1rem;
 }
 
 @media (max-width: 520px) {
@@ -49,13 +54,20 @@ iframe{
 }
 
 .Header{
-  border-bottom: 1px solid #847878;
+  border-bottom: 3px solid #847878;
   text-align: center;
 }
 
 .Footer{
   padding: 20px 0;
+  color: #847878;
+  font-size: 0.8rem;
   text-align: center;
+  line-height: 0.1rem;
+}
+
+.Footer a{
+  color: red;
 }
 
 .header_link{

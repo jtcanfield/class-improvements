@@ -10,10 +10,14 @@ class Header extends Component {
   }
 
   render() {
+    let iww = {
+      "color":"#847878",
+      "fontSize":"1.3rem",
+    }
     return (
       <div className="Header">
-        <div>
-          <h3>Raleigh-Durham Industrial Workers of the World</h3>
+        <div style={iww}>
+          Raleigh-Durham Industrial Workers of the World
         </div>
         <div className="navlinks">
           <NavLink className="verti-center header_link"
