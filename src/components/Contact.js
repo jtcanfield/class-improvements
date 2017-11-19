@@ -17,9 +17,7 @@ class Contact extends Component {
   componentWillMount(){
     request
       .post(`http://localhost:5000/wakeup`)
-      .end((err, res) => {
-        console.log("Server Pinged");
-      })
+      .end((err, res) => {})
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   updateFromField(stateKey) {
@@ -42,7 +40,6 @@ class Contact extends Component {
           this.setState({errormessages:"Internal Server Error"});
         } else if(res.statusCode === 400){
           this.setState({errormessages:res.text});
-          console.log("ITS ALL WRONG");
         } else if(res.statusCode === 200){
           alert("Thank you for contacting us! We will reach out to you soon!");
           window.location.reload();
