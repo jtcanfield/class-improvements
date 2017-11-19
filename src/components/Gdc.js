@@ -4,7 +4,7 @@ class Gdc extends Component {
   render() {
     return (
       <div className="Gdc">
-        <h1>Incarcerated Workers Organizing Committee</h1>
+        <h1>General Defence Committee</h1>
       </div>
     );
   }
