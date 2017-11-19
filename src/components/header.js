@@ -14,10 +14,16 @@ class Header extends Component {
       "color":"#847878",
       "fontSize":"1.3rem",
     }
+    let iwwlogo = {
+      "maxHeight":"250px",
+    }
     return (
       <div className="Header">
         <div style={iww}>
           Raleigh-Durham Industrial Workers of the World
+        </div>
+        <div>
+          <img src="./IWW-Raleigh-Durham.png" style={iwwlogo}/>
         </div>
         <div className="navlinks">
           <NavLink className="verti-center header_link"
