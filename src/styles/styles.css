@@ -66,3 +66,7 @@ iframe{
   color: red;
   font-weight: bold;
 }
+
+.leftaligned{
+  text-align: left;
+}

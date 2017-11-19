@@ -76,13 +76,10 @@ class Contact extends Component {
       "color":`white`,
       "border":`1px solid black`,
     }
-    let leftaligned = {
-      "textAlign":"left",
-    }
     return (
       <div className="Contact" style={container}>
-        <h4 style={leftaligned}>Contact Us</h4>
-        <p style={leftaligned}>Questions? Comments? Want to join? Shoot us a message here or on Facebook!</p>
+        <h4 className="leftaligned">Contact Us</h4>
+        <p className="leftaligned">Questions? Comments? Want to join? Shoot us a message here or on Facebook!</p>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email:</label><br/>
