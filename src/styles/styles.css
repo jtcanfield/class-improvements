@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   font-family: sans-serif;
 }
 
@@ -17,9 +17,25 @@ label {
   font-weight: bold;
 }
 
+.navlinks a{
+  padding: .375rem .75rem;
+  display: inline-block;
+}
+
+.navlinks a:hover{
+  text-decoration: none;
+  color: red;
+}
+
 .body{
   margin: 10px 5%;
 }
+
+.body > div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 @media (max-width: 520px) {
   .body{
     margin: 10px 0%;
@@ -28,15 +44,19 @@ label {
 
 .Header{
   border-bottom: 1px solid red;
+  text-align: center;
 }
 
 .Footer{
   border-top: 1px solid red;
+  text-align: center;
 }
 
 .header_link{
   color: #847878;
 }
+
 .active_header_link{
   color: red;
+  font-weight: bold;
 }

@@ -19,42 +19,42 @@ class Header extends Component {
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/home">
-            <span className='btn font-size-25px'>Home</span>
+            Home
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/about">
-            <span className='btn font-size-25px'>About</span>
+            About
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/contact">
-            <span className='btn font-size-25px'>Contact</span>
+            Contact
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/events">
-            <span className='btn font-size-25px'>Events</span>
+            Events
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/iwoc">
-            <span className='btn font-size-25px'>IWOC</span>
+            IWOC
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/gdc">
-            <span className='btn font-size-25px'>GDC</span>
+            GDC
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/wfw">
-            <span className='btn font-size-25px'>WFW</span>
+            WFW
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/donate">
-            <span className='btn font-size-25px'>Donate</span>
+            Donate
           </NavLink>
         </div>
       </div>

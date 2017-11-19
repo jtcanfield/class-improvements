@@ -70,7 +70,8 @@ class Contact extends Component {
       "border":"2px solid black",
     }
     let submitbutton = {
-      "width":`300px`,
+      "width":`100%`,
+      "maxWidth":`500px`,
       "backgroundColor":`red`,
       "fontSize":`24px`,
       "color":`white`,
