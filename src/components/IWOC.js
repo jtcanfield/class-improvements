@@ -4,7 +4,7 @@ class IWOC extends Component {
   render() {
     return (
       <div className="IWOC">
-        <h1>IWOC</h1>
+        <h1>Incarcerated Workers Organizing Committee</h1>
       </div>
     );
   }
