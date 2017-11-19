@@ -66,6 +66,7 @@ class Contact extends Component {
     return (
       <div className="Contact" style={eventsstyles}>
         <h1>Contact Us</h1>
+        <h4>Questions? Comments? Want to join? Shoot us a message here or on Facebook!</h4>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <h6>Email:</h6>
