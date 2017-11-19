@@ -25,7 +25,7 @@ export default class BaseLayout extends Component {
         // "backgroundColor": "#EEEEEE",
         // "backgroundColor": "#5D711F",
         // "backgroundColor": "#60AC68",
-        // "backgroundColor": "blue",
+        "backgroundColor": "white",
         "minHeight": "800px"
     }
 

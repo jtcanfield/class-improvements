@@ -11,7 +11,7 @@ import Events from './Events.js';
 import IWOC from './IWOC.js';
 import News from './News.js';
 import Donate from './Donate.js';
-import Wfw from './wfw.js';
+import Wfw from './Wfw.js';
 
 const store = createStore(
     allReducers,
