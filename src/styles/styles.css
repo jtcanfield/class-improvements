@@ -8,6 +8,11 @@ body {
 .body{
   margin: 10px 5%;
 }
+@media (max-width: 520px) {
+  .body{
+    margin: 10px 0%;
+  }
+}
 
 .Header{
   border-bottom: 1px solid red;
