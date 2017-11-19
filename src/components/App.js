@@ -9,7 +9,7 @@ import About from './About.js';
 import Contact from './Contact.js';
 import Events from './Events.js';
 import IWOC from './IWOC.js';
-import News from './News.js';
+// import News from './News.js';
 import Donate from './Donate.js';
 import Wfw from './Wfw.js';
 import Gdc from './Gdc.js';
@@ -26,7 +26,6 @@ class App extends Component {
           <BaseLayout>
             <Switch>
               <Route path="/about" render={(props) => ( <About/> )}/>
-              <Route path="/news" render={(props) => ( <News/> )}/>
               <Route path="/contact" render={(props) => ( <Contact/> )}/>
               <Route path="/events" render={(props) => ( <Events/> )}/>
               <Route path="/iwoc" render={(props) => ( <IWOC/> )}/>

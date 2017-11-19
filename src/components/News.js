@@ -9,10 +9,6 @@ class News extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   render() {
-    let eventsstyles = {
-      "margin":"0 auto",
-      "textAlign":"center",
-    }
     let iframelink = `https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftriangleiww%2Fevents%2F&tabs=timeline&width=${this.state.width}&height=1000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=196378587576073`
     let iframestyles = {
       "width":`${this.state.width}px`,
@@ -35,7 +31,7 @@ class News extends Component {
       }
     }
     return (
-      <div className="News" style={eventsstyles}>
+      <div className="News">
         <h1>Recent News</h1>
         <iframe title="news" src={iframelink}
         style={iframestyles}></iframe>
