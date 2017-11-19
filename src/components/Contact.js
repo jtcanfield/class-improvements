@@ -18,7 +18,7 @@ class Contact extends Component {
     request
       .post(`http://localhost:5000/wakeup`)
       .end((err, res) => {
-        console.log(res.text);
+        console.log("Server Pinged");
       })
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
@@ -38,12 +38,17 @@ class Contact extends Component {
       .post(`http://localhost:5000/sendemail`)
       .send(data)
       .end((err, res) => {
-        if(res.statusCode === 400){
+        if(res === undefined){
+          this.setState({errormessages:"Internal Server Error"});
+        } else if(res.statusCode === 400){
           this.setState({errormessages:res.text});
           console.log("ITS ALL WRONG");
+        } else if(res.statusCode === 200){
+          alert("Thank you for contacting us! We will reach out to you soon!");
+          window.location.reload();
+        } else {
+          this.setState({errormessages:"Internal Server Error"});
         }
-        console.log(err);
-        console.log(res);
       })
   }
   render() {
@@ -88,7 +93,7 @@ class Contact extends Component {
             required="true"/>
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
-          <div className="form-group pull-right">
+          <br/><div className="form-group pull-right">
             <button className="btn btn-primary btn-lg" type="submit" onClick={event => this.submitform(event)}>Submit</button>
           </div>
         </form>
