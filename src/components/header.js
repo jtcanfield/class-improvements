@@ -23,7 +23,7 @@ class Header extends Component {
           Raleigh-Durham Industrial Workers of the World
         </div>
         <div>
-          <img src="./IWW-Raleigh-Durham.png" style={iwwlogo}/>
+          <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo" style={iwwlogo}/>
         </div>
         <div className="navlinks">
           <NavLink className="verti-center header_link"
