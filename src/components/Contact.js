@@ -49,9 +49,10 @@ class Contact extends Component {
       })
   }
   render() {
-    let eventsstyles = {
+    let container = {
       "margin":"0 auto",
       "textAlign":"center",
+      "padding":"0 10px"
     }
     let iframelink = `https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftriangleiww%2Fevents%2F&tabs=messages&width=320&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=196378587576073`
     let iframestyles = {
@@ -64,8 +65,9 @@ class Contact extends Component {
       "allowTransparency":"true",
     }
     let textareastyle = {
-      "width":`70%`,
-      "border":"1px solid black",
+      "width":"100%",
+      "maxWidth":`500px`,
+      "border":"2px solid black",
     }
     let submitbutton = {
       "width":`300px`,
@@ -74,37 +76,43 @@ class Contact extends Component {
       "color":`white`,
       "border":`0`,
     }
+    let leftaligned = {
+      "textAlign":"left",
+    }
     return (
-      <div className="Contact" style={eventsstyles}>
-        <h1>Contact Us</h1>
-        <h4>Questions? Comments? Want to join? Shoot us a message here or on Facebook!</h4>
+      <div className="Contact" style={container}>
+        <h4 style={leftaligned}>Contact Us</h4>
+        <p style={leftaligned}>Questions? Comments? Want to join? Shoot us a message here or on Facebook!</p>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
-            <h6>Email:</h6>
+            <label htmlFor="email">Email:</label><br/>
             <input style={textareastyle}
             type="email" onChange={this.updateFromField('email')}
             value={this.state.email}
             placeholder="email"
+            id="email"
             required="true"/>
           </div>
           <div className="form-group">
-            <h6>Phone:</h6>
+            <label htmlFor="phone">Phone:</label><br/>
             <input style={textareastyle}
             type="tel" onChange={this.updateFromField('phone')}
             value={this.state.phone}
             placeholder="phone"
+            id="phone"
             required="true"/>
           </div>
           <div className="form-group">
-            <h6>Message:</h6>
+            <label htmlFor="message">Message:</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('message')}
             value={this.state.message}
             placeholder="message"
+            id="message"
             required="true"/>
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
-          <br/><div className="form-group pull-right">
+          <br/><div>
             <button style={submitbutton} type="submit" onClick={event => this.submitform(event)}>
               Send Message
             </button>
