@@ -10,6 +10,7 @@ class Contact extends Component {
       email: "",
       phone: "",
       message: "",
+      errormessages: false,
     };
     this.submitform=this.submitform.bind(this);
   }
@@ -23,10 +24,11 @@ class Contact extends Component {
   }
   updateFromField(stateKey) {
     return (event) => {
-      this.setState({[stateKey]: event.target.value});
+      this.setState({[stateKey]: event.target.value, errormessages:false});
     }
   }
   submitform(event){
+    event.preventDefault();
     var data = {
       email: this.state.email,
       phone: this.state.phone,
@@ -36,10 +38,13 @@ class Contact extends Component {
       .post(`http://localhost:5000/sendemail`)
       .send(data)
       .end((err, res) => {
+        if(res.statusCode === 400){
+          this.setState({errormessages:res.text});
+          console.log("ITS ALL WRONG");
+        }
         console.log(err);
         console.log(res);
       })
-      event.preventDefault();
   }
   render() {
     let eventsstyles = {
@@ -82,6 +87,7 @@ class Contact extends Component {
             placeholder="message"
             required="true"/>
           </div>
+          {this.state.errormessages ? (this.state.errormessages):"" }
           <div className="form-group pull-right">
             <button className="btn btn-primary btn-lg" type="submit" onClick={event => this.submitform(event)}>Submit</button>
           </div>
