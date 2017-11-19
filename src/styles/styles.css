@@ -34,6 +34,11 @@ label {
 .body > div {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0px 10px;
+}
+
+iframe{
+  margin: 0px -10px;
 }
 
 @media (max-width: 520px) {

@@ -52,7 +52,6 @@ class Contact extends Component {
     let container = {
       "margin":"0 auto",
       "textAlign":"center",
-      "padding":"0 10px"
     }
     let iframelink = `https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftriangleiww%2Fevents%2F&tabs=messages&width=320&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=196378587576073`
     let iframestyles = {
