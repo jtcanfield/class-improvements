@@ -17,3 +17,7 @@ body {
 .Header{
   border-bottom: 1px solid red;
 }
+
+.Footer{
+  border-top: 1px solid red;
+}
