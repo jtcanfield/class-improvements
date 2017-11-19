@@ -11,7 +11,8 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <p>See us on Facebook at https:\/\/www.facebook.com/triangleiww/ or Twitter @triangleiww</p>
+        <p>See us on Facebook at <a href="https://www.facebook.com/triangleiww/" target="blank">
+        https://www.facebook.com/triangleiww/</a> or Twitter @triangleiww</p>
         <p>Copyright 2017</p>
       </div>
     );
