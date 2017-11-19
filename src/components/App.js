@@ -11,6 +11,7 @@ import Events from './Events.js';
 import IWOC from './IWOC.js';
 import News from './News.js';
 import Donate from './Donate.js';
+import Wfw from './wfw.js';
 
 const store = createStore(
     allReducers,
@@ -28,6 +29,7 @@ class App extends Component {
               <Route path="/contact" render={(props) => ( <Contact/> )}/>
               <Route path="/events" render={(props) => ( <Events/> )}/>
               <Route path="/iwoc" render={(props) => ( <IWOC/> )}/>
+              <Route path="/wfw" render={(props) => ( <Wfw/> )}/>
               <Route path="/donate" render={(props) => ( <Donate/> )}/>
               <Route path="/" render={(props) => ( <Homepage/> )}/>
             </Switch>
