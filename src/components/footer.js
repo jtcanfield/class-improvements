@@ -11,7 +11,8 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        <p>Raleigh-Durham IWW</p>
+        <p>See us on Facebook at https:\/\/www.facebook.com/triangleiww/ or Twitter @triangleiww</p>
+        <p>Copyright 2017</p>
       </div>
     );
   }

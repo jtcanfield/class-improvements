@@ -13,6 +13,7 @@ import IWOC from './IWOC.js';
 import Donate from './Donate.js';
 import Wfw from './Wfw.js';
 import Gdc from './Gdc.js';
+import Redirectpage from './Redirect.js';
 
 const store = createStore(
     allReducers,
@@ -32,7 +33,8 @@ class App extends Component {
               <Route path="/gdc" render={(props) => ( <Gdc/> )}/>
               <Route path="/wfw" render={(props) => ( <Wfw/> )}/>
               <Route path="/donate" render={(props) => ( <Donate/> )}/>
-              <Route path="/" render={(props) => ( <Homepage/> )}/>
+              <Route path="/home" render={(props) => ( <Homepage/> )}/>
+              <Route path="/" render={(props) => ( <Redirectpage/> )}/>
             </Switch>
           </BaseLayout>
         </BrowserRouter>
