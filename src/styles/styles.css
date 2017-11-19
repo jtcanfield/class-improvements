@@ -21,3 +21,10 @@ body {
 .Footer{
   border-top: 1px solid red;
 }
+
+.header_link{
+  color: #847878;
+}
+.active_header_link{
+  color: red;
+}

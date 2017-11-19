@@ -16,29 +16,45 @@ class Header extends Component {
           <h3>Raleigh-Durham Industrial Workers of the World</h3>
         </div>
         <div className="navlinks">
-          <NavLink className="verti-center" to="/">
-            <input className='btn btn-link font-size-25px' type='submit' value='Home'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/home">
+            <span className='btn font-size-25px'>Home</span>
           </NavLink>
-          <NavLink className="verti-center" to="/about">
-            <input className='btn btn-link font-size-25px' type='submit' value='About'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/about">
+            <span className='btn font-size-25px'>About</span>
           </NavLink>
-          <NavLink className="verti-center" to="/contact">
-            <input className='btn btn-link font-size-25px' type='submit' value='Contact'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/contact">
+            <span className='btn font-size-25px'>Contact</span>
           </NavLink>
-          <NavLink className="verti-center" to="/events">
-            <input className='btn btn-link font-size-25px' type='submit' value='Events'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/events">
+            <span className='btn font-size-25px'>Events</span>
           </NavLink>
-          <NavLink className="verti-center" to="/iwoc">
-            <input className='btn btn-link font-size-25px' type='submit' value='IWOC'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/iwoc">
+            <span className='btn font-size-25px'>IWOC</span>
           </NavLink>
-          <NavLink className="verti-center" to="/gdc">
-            <input className='btn btn-link font-size-25px' type='submit' value='GDC'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/gdc">
+            <span className='btn font-size-25px'>GDC</span>
           </NavLink>
-          <NavLink className="verti-center" to="/wfw">
-            <input className='btn btn-link font-size-25px' type='submit' value='WFW'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/wfw">
+            <span className='btn font-size-25px'>WFW</span>
           </NavLink>
-          <NavLink className="verti-center" to="/donate">
-            <input className='btn btn-link font-size-25px' type='submit' value='Donate'/>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/donate">
+            <span className='btn font-size-25px'>Donate</span>
           </NavLink>
         </div>
       </div>
