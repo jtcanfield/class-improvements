@@ -33,7 +33,7 @@ class Homepage extends Component {
     }
     return (
       <div className="Homepage">
-        <h2>Recent News</h2>
+        <h4 className="leftaligned">Recent News</h4>
         <iframe title="news" src={iframelink}
         style={iframestyles}></iframe>
       </div>

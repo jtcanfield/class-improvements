@@ -36,7 +36,7 @@ class Events extends Component {
     }
     return (
       <div className="Events" style={eventsstyles}>
-        <h1>Upcoming Events</h1>
+        <h4 className="leftaligned">Upcoming Events</h4>
         <iframe title="events" src={iframelink}
         style={iframestyles}></iframe>
       </div>

@@ -5,7 +5,7 @@ class About extends Component {
     return (
       <div className="About">
         <div className="leftaligned">
-          <h1>Preamble to the IWW Constitution</h1>
+          <h4>Preamble to the IWW Constitution</h4>
           <p>
             The working class and the employing class have nothing in common. There can be no peace so long as hunger and want are found among millions of the working people and the few, who make up the employing class, have all the good things of life.
           </p>

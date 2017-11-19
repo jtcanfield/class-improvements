@@ -32,7 +32,7 @@ class Wfw extends Component {
     }
     return (
       <div className="Wfw">
-        <h1>Workers Feeding Workers</h1>
+        <h4 className="leftaligned">Workers Feeding Workers</h4>
         <iframe title="news" src={iframelink}
         style={iframestyles}></iframe>
       </div>
