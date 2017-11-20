@@ -49,7 +49,7 @@ class Contact extends Component {
       })
   }
   render() {
-    let iframelink = `https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftriangleiww%2Fevents%2F&tabs=messages&width=320&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=196378587576073`
+    let iframelink = `https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftriangleiww%2Fevents%2F&tabs=messages&width=320&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=196378587576073`
     let iframestyles = {
       "width":`320px`,
       "height":`300px`,
@@ -75,8 +75,7 @@ class Contact extends Component {
     return (
       <div className="Contact">
         <h4 className="leftaligned">Contact Us</h4>
-        <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>
-        !</p>
+        <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email:</label><br/>
