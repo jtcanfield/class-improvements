@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Gdc extends Component {
   render() {
@@ -25,7 +26,7 @@ class Gdc extends Component {
         Are you interested in getting involved with the GDC?<br/>
         Have ideas for how you'd like to contribute or collaborate?
         <br/>
-        <a href="/contact">Contact us!</a>
+        <NavLink to="/contact">Contact us!</NavLink>
         </p>
       </div>
     );
