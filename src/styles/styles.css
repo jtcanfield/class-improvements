@@ -31,6 +31,10 @@ label {
   color: red;
 }
 
+.poster_holder a{
+  text-decoration: none;
+}
+
 .body{
   margin: 10px 5%;
 }
