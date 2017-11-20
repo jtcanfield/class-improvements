@@ -66,6 +66,11 @@ class Header extends Component {
             to="/donate">
             Donate
           </NavLink>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/posters">
+            Posters
+          </NavLink>
         </div>
       </div>
     );

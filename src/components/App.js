@@ -33,6 +33,7 @@ class App extends Component {
               <Route path="/gdc" render={(props) => ( <Gdc/> )}/>
               <Route path="/wfw" render={(props) => ( <Wfw/> )}/>
               <Route path="/donate" render={(props) => ( <Donate/> )}/>
+              <Route path="/posters" render={(props) => ( <Posters/> )}/>
               <Route path="/home" render={(props) => ( <Homepage/> )}/>
               <Route path="/" render={(props) => ( <Redirectpage/> )}/>
             </Switch>
