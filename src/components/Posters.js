@@ -10,11 +10,11 @@ class Posters extends Component {
       <div className="Posters">
         <h4 className="leftaligned">Posters</h4>
         <div className="poster_holder">
-          <h5>General Defense Comittee Flyer</h5>
+          <h5 className="leftaligned">General Defense Comittee Flyer</h5>
           <a href="./gdcflyer.jpg" target="blank"><img alt="General Defense Comittee Flyer" src="./gdcflyer.jpg" style={posters}/></a>
-          <h5>Anti-Identity Evropa Flyer</h5>
+          <h5 className="leftaligned">Anti-Identity Evropa Flyer</h5>
           <a href="./iepostercolor.jpg" target="blank"><img alt="Community Defense Poster" src="./iepostercolor.jpg" style={posters}/></a>
-          <h5>Anti-Nazi Poster</h5>
+          <h5 className="leftaligned">Anti-Nazi Poster</h5>
           <a href="./iwwantinaziposter.jpg" target="blank"><img alt="Anti-Nazi Poster" src="./iwwantinaziposter.jpg" style={posters}/></a>
         </div>
       </div>
