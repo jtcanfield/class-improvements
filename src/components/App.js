@@ -12,6 +12,7 @@ import IWOC from './IWOC.js';
 import Donate from './Donate.js';
 import Wfw from './Wfw.js';
 import Gdc from './Gdc.js';
+import Posters from './Posters.js';
 import Redirectpage from './Redirect.js';
 
 const store = createStore(
