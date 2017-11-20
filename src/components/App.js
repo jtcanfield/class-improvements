@@ -35,7 +35,7 @@ class App extends Component {
               <Route path="/donate" render={(props) => ( <Donate/> )}/>
               <Route path="/posters" render={(props) => ( <Posters/> )}/>
               <Route path="/home" render={(props) => ( <Homepage/> )}/>
-              <Route path="/" render={(props) => ( <Redirectpage/> )}/>
+              <Route path="" render={(props) => ( <Redirectpage/> )}/>
             </Switch>
           </BaseLayout>
         </BrowserRouter>
