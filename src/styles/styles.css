@@ -35,6 +35,14 @@ label {
   text-decoration: none;
 }
 
+.poster_holder h5{
+  color: #847878;
+}
+
+.poster_holder h5:hover{
+  color: red;
+}
+
 .body{
   margin: 10px 5%;
 }
