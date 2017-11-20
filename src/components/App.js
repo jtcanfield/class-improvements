@@ -9,7 +9,6 @@ import About from './About.js';
 import Contact from './Contact.js';
 import Events from './Events.js';
 import IWOC from './IWOC.js';
-// import News from './News.js';
 import Donate from './Donate.js';
 import Wfw from './Wfw.js';
 import Gdc from './Gdc.js';
