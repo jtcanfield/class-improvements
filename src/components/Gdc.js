@@ -3,8 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 class Gdc extends Component {
   render() {
+    let bannerpicture = {
+      "maxWidth":"700px",
+      "width":"100%",
+    }
     return (
       <div className="Gdc">
+        <img alt="General Defense Comittee Holding Anti-Klan Banner" style={bannerpicture} src="./GDCantiklanbanner.jpg"/>
         <h4 className="leftaligned">General Defense Committee</h4>
         <p>The Industrial Workers of the World (IWW)'s General Defense Committee (GDC) was formed to defend working class people fighting for their rights on the picket line and in their community.</p>
         <div className="leftaligned">
