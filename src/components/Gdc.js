@@ -25,8 +25,7 @@ class Gdc extends Component {
         Are you interested in getting involved with the GDC?<br/>
         Have ideas for how you'd like to contribute or collaborate?
         <br/>
-        Contact us at
-        rdiwwgmb@gmail.com
+        <a href="/contact">Contact us!</a>
         </p>
       </div>
     );
