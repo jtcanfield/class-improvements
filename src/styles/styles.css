@@ -47,15 +47,6 @@ iframe{
   padding-top: 1rem;
 }
 
-@media (max-width: 520px) {
-  .body{
-    margin: 10px 0%;
-  }
-  .iwwlogo{
-    width: 50%;
-  }
-}
-
 .Header{
   border-bottom: 3px solid #847878;
   text-align: center;
@@ -83,4 +74,22 @@ iframe{
 
 .leftaligned{
   text-align: left;
+}
+
+@media (max-width: 640px) {
+  .body{
+    margin: 10px 0%;
+  }
+  .navlinks {
+    left: 0;
+    width: 60px;
+  }
+  .header_logo_title{
+    flex-grow: 2;
+  }
+  .Header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }

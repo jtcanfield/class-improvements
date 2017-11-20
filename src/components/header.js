@@ -19,11 +19,13 @@ class Header extends Component {
     }
     return (
       <div className="Header">
-        <div style={iww}>
-          Raleigh-Durham Industrial Workers of the World
-        </div>
-        <div>
-          <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo" style={iwwlogo}/>
+        <div className="header_logo_title">
+          <div style={iww}>
+            Raleigh-Durham Industrial Workers of the World
+          </div>
+          <div>
+            <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo" style={iwwlogo}/>
+          </div>
         </div>
         <div className="navlinks">
           <NavLink className="verti-center header_link"
