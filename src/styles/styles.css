@@ -84,9 +84,17 @@ iframe{
   text-align: left;
 }
 
+.gdcfirstpara{
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 640px) {
   .imgtest{
     margin: 0 auto;
+  }
+  .gdcfirstpara{
+    flex-direction: column;
   }
   .body{
     margin: 10px 0%;
