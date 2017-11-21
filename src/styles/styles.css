@@ -118,11 +118,16 @@ iframe{
     top: 0;
     background-color: black;
     width: 100px;
+    border-radius: 0 0 10px 0;
   }
   .navlinks a{
+    width: 100%;
     color: white;
+    border-bottom: 1px solid #847878;
   }
   .modalbutton{
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
     transition: all 0.5s;
     display: block;
     position: fixed;
