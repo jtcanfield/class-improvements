@@ -101,14 +101,17 @@ iframe{
   }
   .navlinks {
     left: 0;
+    top: 0;
     width: 60px;
+    position: absolute;
+    margin-left: -100px;
   }
   .header_logo_title{
     flex-grow: 2;
   }
-  .Header{
+  /*.Header{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-  }
+  }*/
 }
