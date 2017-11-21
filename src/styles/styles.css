@@ -93,15 +93,13 @@ iframe{
   display: none;
 }
 
-.hiddenmodal{
-  margin-left: -100px;
-}
-
-.shownmodal{
-  margin-left: 0px;
-}
-
 @media (max-width: 640px) {
+  .hiddenmodal{
+    margin-left: -100px;
+  }
+  .shownmodal{
+    margin-left: 0px;
+  }
   .imgtest{
     margin: 0 auto;
   }
