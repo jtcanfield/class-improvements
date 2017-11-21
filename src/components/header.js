@@ -20,14 +20,20 @@ class Header extends Component {
     let iwwlogo = {
       "maxHeight":"250px",
     }
+
+
     let modal = {
       "marginLeft":"-100px",
     }
+    let arrowclasses = "modalbutton hiddenmodal";
+    let modalclasses = "";
     let chara = ">"
     if(this.state.modalbuttonactive){
       modal = {
         "marginLeft":"0px",
       }
+      arrowclasses = "modalbutton shownmodal";
+      modalclasses = "navlinks shownmodal";
       chara = "<"
     }
     return (
@@ -40,7 +46,7 @@ class Header extends Component {
             <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo" style={iwwlogo}/>
           </div>
         </div>
-        <div onClick={this.click} className="modalbutton" style={modal}>
+        <div onClick={this.click} className={classes} style={modal}>
           {chara}
         </div>
         <div style={modal} className="navlinks">
