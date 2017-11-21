@@ -116,13 +116,14 @@ iframe{
     position: fixed;
     left: 0;
     top: 0;
-    background-color: black;
+    background-color: white;
     width: 100px;
     border-radius: 0 0 10px 0;
+    border: 1px solid black;
   }
   .navlinks a{
     width: 100%;
-    color: white;
+    color: black;
     border-bottom: 1px solid #847878;
   }
   .modalbutton{
@@ -135,6 +136,6 @@ iframe{
     left: 100px;
     font-size: 30px;
     color: white;
-    background-color: black;
+    background-color: red;
   }
 }
