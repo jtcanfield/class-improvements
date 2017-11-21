@@ -112,7 +112,7 @@ iframe{
     margin: 10px 0%;
   }
   .navlinks {
-    transition: all 1s;
+    transition: all 0.5s;
     position: fixed;
     left: 0;
     top: 0;
@@ -123,7 +123,7 @@ iframe{
     color: white;
   }
   .modalbutton{
-    transition: all 1s;
+    transition: all 0.5s;
     display: block;
     position: fixed;
     top: 0;
