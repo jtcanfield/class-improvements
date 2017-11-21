@@ -25,7 +25,7 @@ class Header extends Component {
     let chara = ">"
     if(this.state.modalbuttonactive){
       arrowclasses = "modalbutton shownmodal";
-      modalclasses = "navlinks shownmodal";
+      modalclasses = "navlinks shownmodal bg-light";
       chara = "<"
     }
     return (
