@@ -95,7 +95,7 @@ iframe{
 
 @media (max-width: 640px) {
   .header_logo_title{
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
   }
   .hiddenmodal{
     margin-left: -100px;
@@ -113,6 +113,9 @@ iframe{
     margin: 10px 0%;
   }
   .navlinks {
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
     transition: all 0.5s;
     position: fixed;
     left: 0;
