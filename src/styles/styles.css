@@ -76,7 +76,7 @@ iframe{
 }
 
 .active_header_link{
-  color: red;
+  color: red !important;
   font-weight: bold;
 }
 
@@ -87,6 +87,10 @@ iframe{
 .gdcfirstpara{
   display: flex;
   flex-direction: row;
+}
+
+.modalbutton{
+  display: none;
 }
 
 @media (max-width: 640px) {
@@ -100,14 +104,18 @@ iframe{
     margin: 10px 0%;
   }
   .navlinks {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     background-color: black;
     width: 100px;
   }
+  .navlinks a{
+    color: white;
+  }
   .modalbutton{
-    position: absolute;
+    display: block;
+    position: fixed;
     top: 0;
     left: 100px;
     font-size: 30px;
