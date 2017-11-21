@@ -5,10 +5,13 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      modalbuttonactive:false,
     };
+    this.click = this.click.bind(this)
   }
-
+  click(){
+    this.setState({modalbuttonactive:!this.state.modalbuttonactive})
+  }
   render() {
     let iww = {
       "color":"#847878",
@@ -16,6 +19,14 @@ class Header extends Component {
     }
     let iwwlogo = {
       "maxHeight":"250px",
+    }
+    let modalbutton = {
+      "marginLeft":"-100px",
+    }
+    if(this.state.modalbuttonactive){
+      modalbutton = {
+        "marginLeft":"0px",
+      }
     }
     return (
       <div className="Header">
@@ -27,7 +38,10 @@ class Header extends Component {
             <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo" style={iwwlogo}/>
           </div>
         </div>
-        <div className="navlinks">
+        <div onClick={this.click} style={modalbutton}>
+          >
+        </div>
+        <div style={modalbutton} className="navlinks">
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/home">

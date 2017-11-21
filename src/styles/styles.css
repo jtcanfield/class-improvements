@@ -102,14 +102,15 @@ iframe{
   .navlinks {
     left: 0;
     top: 0;
-    width: 60px;
+    width: 100px;
     position: absolute;
-    margin-left: -100px;
+    /*margin-left: -100px;*/
+    background-color: black;
   }
-  .header_logo_title{
+  /*.header_logo_title{
     flex-grow: 2;
   }
-  /*.Header{
+  .Header{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
