@@ -117,7 +117,8 @@ iframe{
     background-color: white;
     width: 100px;
     border-radius: 0 0 10px 0;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
   }
   .navlinks a{
     width: 100%;
