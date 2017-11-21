@@ -84,12 +84,10 @@ iframe{
   text-align: left;
 }
 
-.imgtest{
-  display: inline-block;
-  float: right;
-}
-
 @media (max-width: 640px) {
+  .imgtest{
+    margin: 0 auto;
+  }
   .body{
     margin: 10px 0%;
   }
