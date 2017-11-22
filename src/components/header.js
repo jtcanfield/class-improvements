@@ -34,6 +34,12 @@ class Header extends Component {
           </div>
           <div className="fade"></div>
           <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
+          <div className="curveholder">
+            <div className="whitecurve"></div>
+          </div>
+          <div className="curveholder">
+            <div className="blackcurve"></div>
+          </div>
         </div>
         <div onClick={this.click} className={arrowclasses}>
           <span alt="open menu" className={actualarrow}></span>
