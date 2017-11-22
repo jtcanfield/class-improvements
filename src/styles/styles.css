@@ -9,10 +9,10 @@ h1, h2, h3, h4, h5, h6, a{
   color: red;
 }
 
-div:not(.donotfade){
+/*div:not(.donotfade){
   animation-name: entrance;
   animation-duration: .75s;
-}
+}*/
 
 h4, p, .form-group{
   padding-top: 1rem;
@@ -37,17 +37,19 @@ label {
   100% { opacity: 1; max-height: 250px; }
 }
 
-html.donotfade {
-  animation-name: logo !important;
-  animation-duration: .75s;
-}
-
-html {
-  animation-name: entrance;
-  animation-duration: .75s;
+.fade{
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  background-color: white;
 }
 
 .iwwlogo{
+  z-index: 99;
   opacity: 1;
   animation-name: logo !important;
   animation-duration: 1.75s;
