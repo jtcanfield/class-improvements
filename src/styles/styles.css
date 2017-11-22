@@ -41,7 +41,7 @@ label {
 
 .component{
   animation-name: entrance;
-  animation-duration: .75s;
+  animation-duration: .1s;
 }
 
 .fade{
@@ -143,9 +143,11 @@ iframe{
   }
   .hiddenmodal{
     margin-left: -100px;
+    z-index: 5;
   }
   .shownmodal{
     margin-left: 0px;
+    z-index: 5;
   }
   .imgtest{
     margin: 0 auto;
