@@ -26,13 +26,12 @@ class Header extends Component {
       chara = "<"
     }
     return (
-      <div className="Header">
+      <div className="Header component">
         <div className="header_logo_title">
           <div style={iww}>
             Raleigh-Durham Industrial Workers of the World
           </div>
-          <div className="fade">
-          </div>
+          <div className="fade"></div>
           <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
         </div>
         <div onClick={this.click} className={arrowclasses}>

@@ -27,8 +27,9 @@ label {
 }
 
 @keyframes entrance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 @keyframes logo {
@@ -37,22 +38,30 @@ label {
   100% { opacity: 1; max-height: 250px; }
 }
 
+@keyframes fade {
+  0% {opacity: 1; height: 100vh; width: 100vw;}
+  50% {opacity: 1; height: 100vh; width: 100vw;}
+  99% {height: 100vh; width: 100vw;}
+  100% {opacity: 0; height: 0px; width: 0px; }
+}
+
 .fade{
   top: 0px;
   left: 0px;
-  height: 100vh;
-  width: 100vw;
   z-index: 2;
   position: absolute;
-  opacity: 1;
+  opacity: 0;
+  animation-name: fade !important;
+  animation-duration: 1.5s;
   background-color: white;
 }
 
 .iwwlogo{
-  z-index: 99;
+  position: relative;
+  z-index: 3;
   opacity: 1;
   animation-name: logo !important;
-  animation-duration: 1.75s;
+  animation-duration: .75s;
   max-height: 250px;
 }
 
