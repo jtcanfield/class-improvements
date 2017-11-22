@@ -18,12 +18,13 @@ class Header extends Component {
       "fontSize":"1.3rem",
     }
     let arrowclasses = "modalbutton hiddenmodal";
+    let actualarrow = "smallarrowright";
     let modalclasses = "navlinks hiddenmodal";
     let chara = "▶"
     if(this.state.modalbuttonactive){
       arrowclasses = "modalbutton shownmodal";
+      actualarrow = "smallarrowleft";
       modalclasses = "navlinks shownmodal bg-light";
-      chara = "◀"
     }
     return (
       <div className="Header">
@@ -35,7 +36,7 @@ class Header extends Component {
           <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
         </div>
         <div onClick={this.click} className={arrowclasses}>
-          {chara}
+          <span className={actualarrow}></span>
         </div>
         <div className={modalclasses}>
           <NavLink className="verti-center header_link"
