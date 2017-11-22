@@ -36,7 +36,7 @@ class Header extends Component {
           <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
         </div>
         <div onClick={this.click} className={arrowclasses}>
-          <span className={actualarrow}></span>
+          <span alt="open menu" className={actualarrow}></span>
         </div>
         <div className={modalclasses}>
           <NavLink className="verti-center header_link"
