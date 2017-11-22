@@ -5,6 +5,12 @@ body {
   font-family: sans-serif;
 }
 
+div:not(.iwwlogo) {
+  animation-name: entrance;
+  animation-duration: .75s;
+  opacity: 1;
+}
+
 h1, h2, h3, h4, h5, h6, a{
   color: red;
 }
@@ -20,6 +26,25 @@ label {
   color: #847878;
   font-weight: bold;
 }
+
+@keyframes entrance {
+  0% {opacity: 0;}
+  25% { opacity: 0; }
+  100% {opacity: 1;}
+}
+
+@keyframes logo {
+  0% { opacity: 0 !important; max-height: 100vh; margin-bottom: 100000px; }
+  50% { opacity: 1 !important; max-height: 100vh; margin-bottom: 100000px;}
+  100% { opacity: 1 !important; max-height: 250px; }
+}
+
+.iwwlogo{
+  animation-name: logo;
+  animation-duration: .75s;
+  max-height: 250px;
+}
+
 
 .navlinks a{
   padding: .375rem .75rem;
@@ -116,7 +141,7 @@ iframe{
     -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
     box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
-    transition: all 0.5s;
+    transition: all 0.2s;
     position: fixed;
     left: 0;
     top: 0;
@@ -138,7 +163,7 @@ iframe{
     z-index: 9;
     border-radius: 0 10px 10px 0;
     padding: 10px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     display: block;
     position: fixed;
     top: 0;

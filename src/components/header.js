@@ -17,9 +17,6 @@ class Header extends Component {
       "color":"#847878",
       "fontSize":"1.3rem",
     }
-    let iwwlogo = {
-      "maxHeight":"250px",
-    }
     let arrowclasses = "modalbutton hiddenmodal";
     let modalclasses = "navlinks hiddenmodal";
     let chara = ">"
@@ -35,7 +32,7 @@ class Header extends Component {
             Raleigh-Durham Industrial Workers of the World
           </div>
           <div>
-            <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo" style={iwwlogo}/>
+            <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
           </div>
         </div>
         <div onClick={this.click} className={arrowclasses}>
