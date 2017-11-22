@@ -5,14 +5,13 @@ body {
   font-family: sans-serif;
 }
 
-div:not(.iwwlogo) {
-  animation-name: entrance;
-  animation-duration: .75s;
-  opacity: 1;
-}
-
 h1, h2, h3, h4, h5, h6, a{
   color: red;
+}
+
+div:not(.donotfade){
+  animation-name: entrance;
+  animation-duration: .75s;
 }
 
 h4, p, .form-group{
@@ -29,19 +28,29 @@ label {
 
 @keyframes entrance {
   0% {opacity: 0;}
-  25% { opacity: 0; }
   100% {opacity: 1;}
 }
 
 @keyframes logo {
-  0% { opacity: 0 !important; max-height: 100vh; margin-bottom: 100000px; }
-  50% { opacity: 1 !important; max-height: 100vh; margin-bottom: 100000px;}
-  100% { opacity: 1 !important; max-height: 250px; }
+  0% { opacity: 0; max-height: 100vh; }
+  50% { opacity: 1; max-height: 100vh; }
+  100% { opacity: 1; max-height: 250px; }
+}
+
+html.donotfade {
+  animation-name: logo !important;
+  animation-duration: .75s;
+}
+
+html {
+  animation-name: entrance;
+  animation-duration: .75s;
 }
 
 .iwwlogo{
-  animation-name: logo;
-  animation-duration: .75s;
+  opacity: 1;
+  animation-name: logo !important;
+  animation-duration: 1.75s;
   max-height: 250px;
 }
 

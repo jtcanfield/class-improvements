@@ -31,7 +31,7 @@ class Header extends Component {
           <div style={iww}>
             Raleigh-Durham Industrial Workers of the World
           </div>
-          <div>
+          <div className="donotfade">
             <img alt="IWW Logo" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
           </div>
         </div>
