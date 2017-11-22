@@ -29,7 +29,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="header_logo_title">
-          <div style={iww}>
+          <div className="title_of_page" style={iww}>
             Raleigh-Durham Industrial Workers of the World
           </div>
           <div className="fade"></div>
