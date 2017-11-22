@@ -7,7 +7,7 @@ class Posters extends Component {
       "marginBottom":"50px"
     }
     return (
-      <div className="Posters">
+      <div className="Posters component">
         <h4 className="leftaligned">Posters</h4>
         <div className="poster_holder">
           <a href="./gdcflyer.jpg" target="blank">

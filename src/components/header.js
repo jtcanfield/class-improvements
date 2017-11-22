@@ -26,7 +26,7 @@ class Header extends Component {
       chara = "<"
     }
     return (
-      <div className="Header component">
+      <div className="Header">
         <div className="header_logo_title">
           <div style={iww}>
             Raleigh-Durham Industrial Workers of the World

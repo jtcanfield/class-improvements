@@ -73,7 +73,7 @@ class Contact extends Component {
       "border":`0`,
     }
     return (
-      <div className="Contact">
+      <div className="Contact component">
         <h4 className="leftaligned">Contact Us</h4>
         <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>

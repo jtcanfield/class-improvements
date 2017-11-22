@@ -9,11 +9,6 @@ h1, h2, h3, h4, h5, h6, a{
   color: red;
 }
 
-/*div:not(.donotfade){
-  animation-name: entrance;
-  animation-duration: .75s;
-}*/
-
 h4, p, .form-group{
   padding-top: 1rem;
 }
@@ -27,9 +22,8 @@ label {
 }
 
 @keyframes entrance {
-  0% {opacity: 1;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @keyframes logo {
@@ -43,6 +37,11 @@ label {
   50% {opacity: 1; height: 100vh; width: 100vw;}
   99% {height: 100vh; width: 100vw;}
   100% {opacity: 0; height: 0px; width: 0px; }
+}
+
+.component{
+  animation-name: entrance;
+  animation-duration: .75s;
 }
 
 .fade{
