@@ -19,11 +19,11 @@ class Header extends Component {
     }
     let arrowclasses = "modalbutton hiddenmodal";
     let modalclasses = "navlinks hiddenmodal";
-    let chara = ">"
+    let chara = "▶"
     if(this.state.modalbuttonactive){
       arrowclasses = "modalbutton shownmodal";
       modalclasses = "navlinks shownmodal bg-light";
-      chara = "<"
+      chara = "◀"
     }
     return (
       <div className="Header">
