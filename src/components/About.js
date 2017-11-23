@@ -10,6 +10,9 @@ class About extends Component {
     return (
       <div className="About component">
         <div className="leftaligned">
+          <h5><a href="https://www.iww.org/unions" target="_blank">Industrial Unionism</a></h5>
+          <h5><a href="https://www.iww.org/about/solidarityunionism" target="_blank">Solidarity Unionism</a></h5>
+          <h5><a href="https://www.iww.org/about/how-iww-differs-business-unions" target="_blank">How the IWW Differs from Business Unions</a></h5>
           <h4>Preamble to the IWW Constitution</h4>
           <p>
             The working class and the employing class have nothing in common. There can be no peace so long as hunger and want are found among millions of the working people and the few, who make up the employing class, have all the good things of life.
