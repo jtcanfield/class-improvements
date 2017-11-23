@@ -142,6 +142,8 @@ iframe{
 }
 .title_of_page{
   position: relative;
+  color: #847878;
+  font-size: 1.3rem;
 }
 
 /*BELOW IS CURVE*/
@@ -215,6 +217,10 @@ iframe{
     color: white;
     background-color: red;
     width: 30px;
+  }
+
+  .openmodalbackground{
+
   }
 
   .smallarrowleft {

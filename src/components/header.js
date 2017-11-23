@@ -13,22 +13,20 @@ class Header extends Component {
     this.setState({modalbuttonactive:!this.state.modalbuttonactive})
   }
   render() {
-    let iww = {
-      "color":"#847878",
-      "fontSize":"1.3rem",
-    }
     let arrowclasses = "modalbutton hiddenmodal";
     let actualarrow = "smallarrowright";
     let modalclasses = "navlinks hiddenmodal";
+    let openmodalbackground = "";
     if(this.state.modalbuttonactive){
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";
       modalclasses = "navlinks shownmodal bg-light";
+      openmodalbackground = "openmodalbackground";
     }
     return (
       <div className="Header">
         <div className="header_logo_title">
-          <div className="title_of_page" style={iww}>
+          <div className="title_of_page">
             Raleigh-Durham Industrial Workers of the World
           </div>
           <div className="fade"></div>
@@ -98,6 +96,7 @@ class Header extends Component {
             Posters
           </NavLink>
         </div>
+        <div onClick={this.click} className={openmodalbackground}></div>
       </div>
     );
   }
