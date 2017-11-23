@@ -96,7 +96,7 @@ class Header extends Component {
             Posters
           </NavLink>
         </div>
-        <div onClick={this.click} className={openmodalbackground}></div>
+        <div onClick={this.click} onTouchStart={this.click} className={openmodalbackground}></div>
       </div>
     );
   }
