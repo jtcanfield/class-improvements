@@ -11,7 +11,7 @@ class IWOC extends Component {
       <div className="IWOC component">
         <div className="leftaligned">
           <h4>Incarcerated Workers Organizing Committee</h4>
-          <p>Blog: <a href="https://raleighdurhamiwoc.wordpress.com/" target="blank">
+          <p>Blog: <a href="https://raleighdurhamiwoc.wordpress.com/" target="_blank" rel="noopener noreferrer">
             raleighdurhamiwoc.wordpress.com
           </a></p>
           <p>
