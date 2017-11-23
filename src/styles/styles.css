@@ -28,8 +28,8 @@ label {
 }
 
 @keyframes logo {
-  0% { opacity: 0; max-height: 100vh; }
-  50% { opacity: 1; max-height: 100vh; }
+  0% { opacity: 0; max-height: 75vh; }
+  50% { opacity: 1; max-height: 75vh; }
   100% { opacity: 1; max-height: 250px; }
 }
 
