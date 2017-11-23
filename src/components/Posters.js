@@ -9,7 +9,8 @@ class Posters extends Component {
   render() {
     let posters = {
       "width":"100%",
-      "marginBottom":"50px"
+      "marginBottom":"50px",
+      "border":"1px solid black",
     }
     return (
       <div className="Posters component">
