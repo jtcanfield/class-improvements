@@ -20,7 +20,6 @@ class Header extends Component {
     let arrowclasses = "modalbutton hiddenmodal";
     let actualarrow = "smallarrowright";
     let modalclasses = "navlinks hiddenmodal";
-    let chara = "▶";
     if(this.state.modalbuttonactive){
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";

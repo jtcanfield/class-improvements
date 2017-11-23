@@ -14,12 +14,17 @@ import Wfw from './Wfw.js';
 import Gdc from './Gdc.js';
 import Posters from './Posters.js';
 import Redirectpage from './Redirect.js';
+import {init as firebaseInit} from './javascripts/firebase.js'
 
 const store = createStore(
     allReducers,
 );
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    firebaseInit()
+  }
   render() {
     return (
       <Provider store={store}>
