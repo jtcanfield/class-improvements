@@ -141,6 +141,7 @@ iframe{
   border-radius: 0px 0px 100vh 175px;
 }
 .title_of_page{
+  padding: 0 10%;
   position: relative;
   color: #847878;
   font-size: 1.3rem;
