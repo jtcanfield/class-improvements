@@ -21,12 +21,6 @@ class Header extends Component {
     let actualarrow = "smallarrowright";
     let modalclasses = "navlinks hiddenmodal";
     let chara = "▶";
-    // <div className="curveholder">
-    //   <div className="blackcurve"></div>
-    // </div>
-    // <div className="curveholder">
-    //   <div className="whitecurve"></div>
-    // </div>
     if(this.state.modalbuttonactive){
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";
