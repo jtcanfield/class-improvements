@@ -12,6 +12,7 @@ import IWOC from './IWOC.js';
 import Donate from './Donate.js';
 import Wfw from './Wfw.js';
 import Gdc from './Gdc.js';
+import Join from './Join.js';
 import Posters from './Posters.js';
 import Redirectpage from './Redirect.js';
 import {init as firebaseInit} from './javascripts/firebase.js'
@@ -41,6 +42,7 @@ class App extends Component {
               <Route path="/donate" render={(props) => ( <Donate/> )}/>
               <Route path="/posters" render={(props) => ( <Posters/> )}/>
               <Route path="/home" render={(props) => ( <Homepage/> )}/>
+              <Route path="/joinus" render={(props) => ( <Join/> )}/>
               <Route path="/gdcflyer.jpg" render={(props) => ( <img alt="GDC Flyer" src="./gdcflyer.jpg"/> )}/>
               <Route path="/iepostercolor.jpg" render={(props) => ( <img alt="Community Defense Poster" src="./iepostercolor.jpg"/> )}/>
               <Route path="/iwwantinaziposter.jpg" render={(props) => ( <img alt="Anti-Nazi Poster" src="./iwwantinaziposter.jpg"/> )}/>
