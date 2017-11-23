@@ -48,7 +48,7 @@ label {
   top: 0px;
   left: 0px;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   opacity: 0;
   animation-name: fade !important;
   animation-duration: 1.5s;
