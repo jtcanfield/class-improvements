@@ -53,7 +53,7 @@ class Header extends Component {
           -139 -1334 -335 -1812 -435 -1025 -215 -1859 -350 -2670 -433 -753 -77 -1448
           -87 -2180 -31 -1399 108 -3320 481 -5102 992 -17 5 -18 -7 -18 -150z"/>
           </g>
-          </svg>
+          </svg>/>
           </div>
         </div>
         <div onClick={this.click} className={arrowclasses}>
