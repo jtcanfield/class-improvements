@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 class Gdc extends Component {
+  componentWillMount(){
+    if (window.innerWidth <= 640){
+      window.scrollTo(0, 0);
+    }
+  }
   render() {
     let bannerpicture = {
       "maxWidth":"700px",

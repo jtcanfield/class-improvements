@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class About extends Component {
+  componentWillMount(){
+    if (window.innerWidth <= 640){
+      window.scrollTo(0, 0);
+    }
+  }
   render() {
     return (
       <div className="About component">

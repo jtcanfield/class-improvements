@@ -15,6 +15,9 @@ class Contact extends Component {
     this.submitform=this.submitform.bind(this);
   }
   componentWillMount(){
+    if (window.innerWidth <= 640){
+      window.scrollTo(0, 0);
+    }
     request
       // .post(`http://localhost:5000/wakeup`)
       .post(`https://class-improvements-backend.herokuapp.com/wakeup`)

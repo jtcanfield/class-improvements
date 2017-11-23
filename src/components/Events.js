@@ -6,6 +6,9 @@ class Events extends Component {
     this.state = { width: '0', height: '0' };
   }
   componentWillMount(){
+    if (window.innerWidth <= 640){
+      window.scrollTo(0, 0);
+    }
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   render() {

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Posters extends Component {
+  componentWillMount(){
+    if (window.innerWidth <= 640){
+      window.scrollTo(0, 0);
+    }
+  }
   render() {
     let posters = {
       "width":"100%",
