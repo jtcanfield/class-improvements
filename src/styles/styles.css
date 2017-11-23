@@ -152,7 +152,13 @@ iframe{
 .curveholder{
   height: 1px;
 }
-.blackcurve{
+.curveholder svg{
+  border: 1px solid green;
+  width: 100%;
+  transform: translateY(-100%);
+}
+/*BELOW IS CURVE*/
+/*.blackcurve{
   position: relative;
   transform: translateY(-115%) scale(1.3);
   height: 300px;
@@ -168,7 +174,7 @@ iframe{
   border-radius: 0px 0px 55% 55%;
   border-bottom: 8px solid white;
   background-color: white;
-}
+}*/
 /*END CURVE*/
 
 @media (max-width: 640px) {
@@ -259,8 +265,5 @@ iframe{
   	border-bottom: 20px solid transparent;
   	border-left: 10px solid white;
   	border-top: 20px solid transparent;
-  }
-  .whitecurve{
-    height: 400px;
   }
 }
