@@ -139,9 +139,6 @@ iframe{
 
 .header_logo_title{
   border-radius: 0px 0px 100vh 175px;
-  /*-moz-border-radius: 0px 0px 174px 175px;
-  -webkit-border-radius: 0px 0px 174px 175px;
-  border: 1px solid #000000;*/
 }
 .title_of_page{
   position: relative;
@@ -181,14 +178,6 @@ iframe{
     margin-bottom: 15px;
   }
 
-  .hiddenmodal{
-    margin-left: -100px;
-  }
-
-  .shownmodal{
-    z-index: 5;
-  }
-
   .imgtest{
     margin: 0 auto;
   }
@@ -201,6 +190,14 @@ iframe{
     margin: 10px 0%;
   }
 
+  .hiddenmodal{
+    margin-left: -200px;
+  }
+
+  .shownmodal{
+    z-index: 5;
+  }
+
   .navlinks {
     -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
@@ -210,8 +207,7 @@ iframe{
     left: 0;
     z-index: 999;
     top: 0;
-    /*background-color: white;*/
-    width: 100px;
+    width: 200px;
     border-radius: 0 0 10px 0;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
@@ -233,7 +229,7 @@ iframe{
     display: block;
     position: fixed;
     top: 0;
-    left: 100px;
+    left: 200px;
     z-index: 99;
     font-size: 30px;
     color: white;
@@ -246,7 +242,7 @@ iframe{
     z-index: 9999;
     position: fixed;
     top: 10px;
-    left: 110px;
+    left: 210px;
   	width: 0;
   	height: 0;
   	border-top: 20px solid transparent;
