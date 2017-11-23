@@ -7,6 +7,9 @@ class About extends Component {
     }
   }
   render() {
+    let moreinfo ={
+      "color":"#847878",
+    }
     return (
       <div className="About component">
         <div className="leftaligned">
@@ -47,10 +50,10 @@ class About extends Component {
           <p>
             It is the historic mission of the working class to do away with capitalism. The army of production must be organized, not only for everyday struggle with capitalists, but also to carry on production when capitalism shall have been overthrown. By organizing industrially we are forming the structure of the new society within the shell of the old.
           </p>
-          <h4>More Info:</h4>
-          <h5><a href="https://www.iww.org/unions" target="_blank" rel="noopener noreferrer">Industrial Unionism</a></h5>
-          <h5><a href="https://www.iww.org/about/solidarityunionism" target="_blank" rel="noopener noreferrer">Solidarity Unionism</a></h5>
-          <h5><a href="https://www.iww.org/about/how-iww-differs-business-unions" target="_blank" rel="noopener noreferrer">How the IWW Differs from Business Unions</a></h5>
+          <h4 style={moreinfo}>More Info:</h4>
+          <a href="https://www.iww.org/unions" target="_blank" rel="noopener noreferrer">Industrial Unionism</a><br/>
+          <a href="https://www.iww.org/about/solidarityunionism" target="_blank" rel="noopener noreferrer">Solidarity Unionism</a><br/>
+          <a href="https://www.iww.org/about/how-iww-differs-business-unions" target="_blank" rel="noopener noreferrer">How the IWW Differs from Business Unions</a><br/>
         </div>
       </div>
     );
