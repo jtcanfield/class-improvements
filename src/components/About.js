@@ -10,9 +10,24 @@ class About extends Component {
     return (
       <div className="About component">
         <div className="leftaligned">
-          <h5><a href="https://www.iww.org/unions" target="_blank">Industrial Unionism</a></h5>
-          <h5><a href="https://www.iww.org/about/solidarityunionism" target="_blank">Solidarity Unionism</a></h5>
-          <h5><a href="https://www.iww.org/about/how-iww-differs-business-unions" target="_blank">How the IWW Differs from Business Unions</a></h5>
+          <h4>What is the IWW?</h4>
+          <p>
+            The IWW is the Industrial Workers of the World (sometimes called “the
+            Wobblies”), a democratic, rank-and-file labor organization dedicated
+            to building workers’ power on the job.
+          </p>
+          <p>
+            The IWW is run by its members, not by hired staff and union bosses. It
+            has only one full-time paid officer, the General Secretary-Treasurer. All
+            general officers are elected each year by the whole membership.
+            There are no “career officers” in the IWW.
+          </p>
+          <p>
+            Local Branches elect their own officers and have complete control over
+            local affairs, as long as they abide by the IWW Constitution. Nobody
+            else can tell workers on a job to go on strike, to end a strike, or to take
+            any other job action.
+          </p>
           <h4>Preamble to the IWW Constitution</h4>
           <p>
             The working class and the employing class have nothing in common. There can be no peace so long as hunger and want are found among millions of the working people and the few, who make up the employing class, have all the good things of life.
@@ -32,6 +47,10 @@ class About extends Component {
           <p>
             It is the historic mission of the working class to do away with capitalism. The army of production must be organized, not only for everyday struggle with capitalists, but also to carry on production when capitalism shall have been overthrown. By organizing industrially we are forming the structure of the new society within the shell of the old.
           </p>
+          <h4>More Info:</h4>
+          <h5><a href="https://www.iww.org/unions" target="_blank">Industrial Unionism</a></h5>
+          <h5><a href="https://www.iww.org/about/solidarityunionism" target="_blank">Solidarity Unionism</a></h5>
+          <h5><a href="https://www.iww.org/about/how-iww-differs-business-unions" target="_blank">How the IWW Differs from Business Unions</a></h5>
         </div>
       </div>
     );
