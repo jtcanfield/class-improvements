@@ -142,7 +142,6 @@ iframe{
 }
 .title_of_page{
   position: relative;
-  z-index: 3;
 }
 
 /*BELOW IS CURVE*/
@@ -153,25 +152,6 @@ iframe{
   width: 100%;
   transform: translateY(-100%);
 }
-/*BELOW IS CURVE*/
-/*.blackcurve{
-  position: relative;
-  transform: translateY(-115%) scale(1.3);
-  height: 300px;
-  border-radius: 0px 0px 50% 50%;
-  border-bottom: 15px solid #000000;
-  background-color: black;
-}
-.whitecurve{
-  position: relative;
-  transform: translateY(-101%) scale(1);
-  height: 300px;
-  z-index: 1;
-  border-radius: 0px 0px 55% 55%;
-  border-bottom: 8px solid white;
-  background-color: white;
-}*/
-/*END CURVE*/
 
 @media (max-width: 640px) {
   .header_logo_title{
@@ -195,7 +175,7 @@ iframe{
   }
 
   .shownmodal{
-    z-index: 5;
+    /*z-index: 5;*/
   }
 
   .navlinks {
@@ -205,7 +185,7 @@ iframe{
     transition: all 0.2s;
     position: fixed;
     left: 0;
-    z-index: 999;
+    z-index: 100;
     top: 0;
     width: 200px;
     border-radius: 0 0 10px 0;
@@ -239,7 +219,7 @@ iframe{
 
   .smallarrowleft {
     transition: all 0.2s;
-    z-index: 9999;
+    z-index: 100;
     position: fixed;
     top: 10px;
     left: 210px;
@@ -251,7 +231,7 @@ iframe{
   }
   .smallarrowright {
     transition: all 0.2s;
-    z-index: 9999;
+    z-index: 100;
     position: fixed;
     top: 10px;
     left: 10px;
