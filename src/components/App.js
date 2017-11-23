@@ -26,6 +26,7 @@ class App extends Component {
     firebaseInit()
   }
   render() {
+    // <Route path="/gdcposter.jpg" render={(props) => ( "./posters/gdcposter.jpg" )}/>
     return (
       <Provider store={store}>
         <BrowserRouter>
