@@ -78,15 +78,15 @@ class Contact extends Component {
       "color":`white`,
       "border":`0`,
     }
+    // <NavLink className="verti-center header_link"
+    //   activeClassName="active_header_link"
+    //   to="/joinus">
+    //   Download the form or join electronically here!
+    // </NavLink>
     return (
       <div className="Contact component">
         <h4 className="leftaligned">Contact Us</h4>
         <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
-        <NavLink className="verti-center header_link"
-          activeClassName="active_header_link"
-          to="/joinus">
-          Download the form or join electronically here!
-        </NavLink>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email:</label><br/>
