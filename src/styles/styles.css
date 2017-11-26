@@ -134,7 +134,7 @@ iframe{
   flex-direction: row;
 }
 
-.modalbutton{
+.modalbutton, .hitbox{
   display: none;
 }
 
@@ -219,6 +219,15 @@ iframe{
     color: white;
     background-color: red;
     width: 30px;
+  }
+
+  .hitbox{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 80px;
   }
 
   .openmodalbackground{

@@ -13,14 +13,16 @@ class Header extends Component {
     this.setState({modalbuttonactive:!this.state.modalbuttonactive})
   }
   render() {
+    let modalclasses = "navlinks hiddenmodal";
+    let hitbox = "hitbox hiddenmodal";
     let arrowclasses = "modalbutton hiddenmodal";
     let actualarrow = "smallarrowright";
-    let modalclasses = "navlinks hiddenmodal";
     let openmodalbackground = "";
     if(this.state.modalbuttonactive){
+      modalclasses = "navlinks shownmodal bg-light";
+      hitbox = "hitbox shownmodal";
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";
-      modalclasses = "navlinks shownmodal bg-light";
       openmodalbackground = "openmodalbackground";
     }
     return (
@@ -48,6 +50,7 @@ class Header extends Component {
         </div>
         <div onClick={this.click} className={arrowclasses}>
           <span alt="open menu" className={actualarrow}></span>
+          <div onClick={this.click} className={hitbox}></div>
         </div>
         <div onClick={this.click} className={modalclasses}>
           <NavLink className="verti-center header_link"
