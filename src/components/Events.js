@@ -40,7 +40,7 @@ class Events extends Component {
     return (
       <div className="Events component" style={eventsstyles}>
         <h4 className="leftaligned">Upcoming Events</h4>
-        <p className="leftaligned">We usually have our GDC meetings on the first Saturday of every month and our General Branch meetings on the second Saturday of every month. This is subject to change, so keep an eye on our events page!</p>
+        <p className="leftaligned">We usually have our General Branch meetings on the second Saturday of every month. This is subject to change, so keep an eye on our events page!</p>
         <iframe title="events" src={iframelink}
         style={iframestyles}></iframe>
       </div>
