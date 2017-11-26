@@ -49,7 +49,7 @@ class Header extends Component {
         <div onClick={this.click} className={arrowclasses}>
           <span alt="open menu" className={actualarrow}></span>
         </div>
-        <div className={modalclasses}>
+        <div onClick={this.click} className={modalclasses}>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             to="/home">
