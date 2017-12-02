@@ -18,6 +18,12 @@ class Join extends Component {
       worker: false,
       constitution: false,
       errormessages: false,
+      why: "",
+      heardfrom: "",
+      involved: "",
+      skills: "",
+      otherorganizations: "",
+      internet: "",
       duesValue: "",
     };
     this.submitform=this.submitform.bind(this);
