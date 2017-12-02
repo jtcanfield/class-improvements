@@ -81,7 +81,7 @@ class Join extends Component {
         } else if(res.statusCode === 400){
           this.setState({errormessages:res.text});
         } else if(res.statusCode === 200){
-          alert("Thank you for contacting us! We will reach out to you soon!");
+          alert("Thank you for applying! Come to the next meeting and introduce yourself! We will have your card ready for you.");
           window.location.reload();
         } else {
           this.setState({errormessages:"Internal Server Error"});
