@@ -24,26 +24,27 @@ class Join extends Component {
   }
   submitform(event){
     event.preventDefault();
-    var data = {
-      email: this.state.email,
-      phone: this.state.phone,
-      message: this.state.message
-    }
-    request
-      .post(`https://class-improvements-backend.herokuapp.com/sendemail`)
-      .send(data)
-      .end((err, res) => {
-        if(res === undefined){
-          this.setState({errormessages:"Internal Server Error"});
-        } else if(res.statusCode === 400){
-          this.setState({errormessages:res.text});
-        } else if(res.statusCode === 200){
-          alert("Thank you for contacting us! We will reach out to you soon!");
-          window.location.reload();
-        } else {
-          this.setState({errormessages:"Internal Server Error"});
-        }
-      })
+    console.log("Submitted");
+    // var data = {
+    //   email: this.state.email,
+    //   phone: this.state.phone,
+    //   message: this.state.message
+    // }
+    // request
+    //   .post(`https://class-improvements-backend.herokuapp.com/sendemail`)
+    //   .send(data)
+    //   .end((err, res) => {
+    //     if(res === undefined){
+    //       this.setState({errormessages:"Internal Server Error"});
+    //     } else if(res.statusCode === 400){
+    //       this.setState({errormessages:res.text});
+    //     } else if(res.statusCode === 200){
+    //       alert("Thank you for contacting us! We will reach out to you soon!");
+    //       window.location.reload();
+    //     } else {
+    //       this.setState({errormessages:"Internal Server Error"});
+    //     }
+    //   })
   }
   render() {
     let textareastyle = {
@@ -68,6 +69,60 @@ class Join extends Component {
         </div>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
+            <label htmlFor="name">Name:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('name')}
+            value={this.state.name}
+            placeholder="name"
+            id="name"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="address">Address:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('address')}
+            value={this.state.address}
+            placeholder="address"
+            id="address"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="city">City:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('city')}
+            value={this.state.city}
+            placeholder="city"
+            id="city"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="state">State:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('state')}
+            value={this.state.state}
+            placeholder="state"
+            id="state"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="zip">Zip:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('zip')}
+            value={this.state.zip}
+            placeholder="zip"
+            id="zip"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="country">Country:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('country')}
+            value={this.state.country}
+            placeholder="country"
+            id="country"
+            required="true"/>
+          </div>
+          <div className="form-group">
             <label htmlFor="email">Email:</label><br/>
             <input style={textareastyle}
             type="email" onChange={this.updateFromField('email')}
@@ -77,12 +132,30 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Phone:</label><br/>
+            <label htmlFor="telephone">Telephone:</label><br/>
             <input style={textareastyle}
-            type="tel" onChange={this.updateFromField('phone')}
-            value={this.state.phone}
-            placeholder="phone"
-            id="phone"
+            type="tel" onChange={this.updateFromField('telephone')}
+            value={this.state.telephone}
+            placeholder="telephone"
+            id="telephone"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="employer">Employer:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('employer')}
+            value={this.state.employer}
+            placeholder="employer"
+            id="employer"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="occupation">Occupation:</label><br/>
+            <input style={textareastyle}
+            type="text" onChange={this.updateFromField('occupation')}
+            value={this.state.occupation}
+            placeholder="occupation"
+            id="occupation"
             required="true"/>
           </div>
           <div className="form-group">
