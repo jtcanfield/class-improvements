@@ -84,7 +84,7 @@ class Contact extends Component {
         <NavLink className="verti-center header_link"
           activeClassName="active_header_link"
           to="/joinus">
-          Download the form or join electronically here!
+          Want to join? Download the form or join electronically here!
         </NavLink>
         <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
