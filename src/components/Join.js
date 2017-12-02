@@ -5,9 +5,18 @@ class Join extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: "",
+      address: "",
+      city: "",
+      state: "",
+      zip: "",
+      country: "",
       email: "",
-      phone: "",
-      message: "",
+      telephone: "",
+      employer: "",
+      occupation: "",
+      worker: false,
+      constitution: false,
       errormessages: false,
     };
     this.submitform=this.submitform.bind(this);
