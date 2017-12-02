@@ -12,7 +12,7 @@ class Join extends Component {
       zip: "",
       country: "",
       email: "",
-      telephone: "",
+      phone: "",
       employer: "",
       occupation: "",
       worker: false,
@@ -58,7 +58,7 @@ class Join extends Component {
       zip: this.state.zip,
       country: this.state.country,
       email: this.state.email,
-      telephone: this.state.telephone,
+      phone: this.state.phone,
       employer: this.state.employer,
       occupation: this.state.occupation,
       worker: workerdata,
@@ -175,12 +175,12 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="telephone">Telephone:<span className="requiredstar">*</span></label><br/>
+            <label htmlFor="phone">phone:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
-            type="tel" onChange={this.updateFromField('telephone')}
-            value={this.state.telephone}
-            placeholder="telephone"
-            id="telephone"
+            type="tel" onChange={this.updateFromField('phone')}
+            value={this.state.phone}
+            placeholder="phone"
+            id="phone"
             required="true"/>
           </div>
           <div className="form-group">
