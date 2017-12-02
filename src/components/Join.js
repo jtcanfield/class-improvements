@@ -82,7 +82,7 @@ class Join extends Component {
         </div>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Name:</label><br/>
+            <label htmlFor="name">Name:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('name')}
             value={this.state.name}
@@ -91,7 +91,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="address">Address:</label><br/>
+            <label htmlFor="address">Address:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('address')}
             value={this.state.address}
@@ -100,7 +100,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="city">City:</label><br/>
+            <label htmlFor="city">City:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('city')}
             value={this.state.city}
@@ -109,7 +109,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="state">State:</label><br/>
+            <label htmlFor="state">State:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('state')}
             value={this.state.state}
@@ -118,7 +118,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="zip">Zip:</label><br/>
+            <label htmlFor="zip">Zip:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('zip')}
             value={this.state.zip}
@@ -127,7 +127,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="country">Country:</label><br/>
+            <label htmlFor="country">Country:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('country')}
             value={this.state.country}
@@ -136,7 +136,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email:</label><br/>
+            <label htmlFor="email">Email:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="email" onChange={this.updateFromField('email')}
             value={this.state.email}
@@ -145,7 +145,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="telephone">Telephone:</label><br/>
+            <label htmlFor="telephone">Telephone:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="tel" onChange={this.updateFromField('telephone')}
             value={this.state.telephone}
@@ -154,7 +154,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="employer">Employer:</label><br/>
+            <label htmlFor="employer">Employer:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('employer')}
             value={this.state.employer}
@@ -163,7 +163,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="occupation">Occupation:</label><br/>
+            <label htmlFor="occupation">Occupation:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="text" onChange={this.updateFromField('occupation')}
             value={this.state.occupation}
@@ -172,7 +172,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="worker">Worker:</label><br/>
+            <label htmlFor="worker">Worker:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="checkbox" onChange={this.handlecheckboxchange}
             checked={this.state.worker}
@@ -182,7 +182,7 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="constitution">Constitution:</label><br/>
+            <label htmlFor="constitution">Constitution:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="checkbox" onChange={this.handlecheckboxchange}
             checked={this.state.constitution}
