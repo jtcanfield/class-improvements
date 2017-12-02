@@ -192,13 +192,52 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message:</label><br/>
+            <label htmlFor="why">why:</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
-            onChange={this.updateFromField('message')}
-            value={this.state.message}
-            placeholder="message"
-            id="message"
-            required="true"/>
+            onChange={this.updateFromField('why')}
+            value={this.state.why}
+            placeholder="why"
+            id="why"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="heardfrom">heardfrom:</label><br/>
+            <textarea type="text" style={textareastyle} rows="5"
+            onChange={this.updateFromField('heardfrom')}
+            value={this.state.heardfrom}
+            placeholder="heardfrom"
+            id="heardfrom"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="involved">involved:</label><br/>
+            <textarea type="text" style={textareastyle} rows="5"
+            onChange={this.updateFromField('involved')}
+            value={this.state.involved}
+            placeholder="involved"
+            id="involved"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="skills">skills:</label><br/>
+            <textarea type="text" style={textareastyle} rows="5"
+            onChange={this.updateFromField('skills')}
+            value={this.state.skills}
+            placeholder="skills"
+            id="skills"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="otherorganizations">otherorganizations:</label><br/>
+            <textarea type="text" style={textareastyle} rows="5"
+            onChange={this.updateFromField('otherorganizations')}
+            value={this.state.otherorganizations}
+            placeholder="otherorganizations"
+            id="otherorganizations"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="internet">internet:</label><br/>
+            <textarea type="text" style={textareastyle} rows="5"
+            onChange={this.updateFromField('internet')}
+            value={this.state.internet}
+            placeholder="internet"
+            id="internet"/>
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
           <br/><div>
