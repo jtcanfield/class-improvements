@@ -18,9 +18,11 @@ class Join extends Component {
       worker: false,
       constitution: false,
       errormessages: false,
+      duesValue: "",
     };
     this.submitform=this.submitform.bind(this);
     this.handlecheckboxchange=this.handlecheckboxchange.bind(this);
+    this.handleSelectChange=this.handleSelectChange.bind(this);
   }
   componentWillMount(){
     if (window.innerWidth <= 640){
@@ -35,30 +37,54 @@ class Join extends Component {
   handlecheckboxchange = (event) => {
     this.setState({[event.target.id]: !this.state[event.target.id]});
   }
+  handleSelectChange = (event) => {
+    this.setState({ duesValue: event.target.value },()=>{
+      console.log(this.state.duesValue);
+    });
+  }
   submitform(event){
     event.preventDefault();
-    console.log("Submitted");
-    // var data = {
-    //   email: this.state.email,
-    //   phone: this.state.phone,
-    //   message: this.state.message
-    // }
-    // request
-    // .post(`http://localhost:5000/submitapplication`)
-    //   .post(`https://class-improvements-backend.herokuapp.com/submitapplication`)
-    //   .send(data)
-    //   .end((err, res) => {
-    //     if(res === undefined){
-    //       this.setState({errormessages:"Internal Server Error"});
-    //     } else if(res.statusCode === 400){
-    //       this.setState({errormessages:res.text});
-    //     } else if(res.statusCode === 200){
-    //       alert("Thank you for contacting us! We will reach out to you soon!");
-    //       window.location.reload();
-    //     } else {
-    //       this.setState({errormessages:"Internal Server Error"});
-    //     }
-    //   })
+    let workerdata = "";
+    let constitutiondata = "";
+    if (this.state.worker){workerdata = "true"};
+    if (this.state.constitution){constitutiondata = "true"};
+    var data = {
+      name: this.state.name,
+      address: this.state.address,
+      city: this.state.city,
+      state: this.state.state,
+      zip: this.state.zip,
+      country: this.state.country,
+      email: this.state.email,
+      telephone: this.state.telephone,
+      employer: this.state.employer,
+      occupation: this.state.occupation,
+      worker: workerdata,
+      constitution: constitutiondata,
+      why: this.state.why,
+      heardfrom: this.state.heardfrom,
+      involved: this.state.involved,
+      skills: this.state.skills,
+      otherorganizations: this.state.otherorganizations,
+      internet: this.state.internet,
+      duesValue: this.state.duesValue,
+    }
+    request
+      .post(`http://localhost:5000/submitapplication`)
+      // .post(`https://class-improvements-backend.herokuapp.com/submitapplication`)
+      .send(data)
+      .end((err, res) => {
+        if(res === undefined){
+          this.setState({errormessages:"Internal Server Error"});
+        } else if(res.statusCode === 400){
+          this.setState({errormessages:res.text});
+        } else if(res.statusCode === 200){
+          alert("Thank you for contacting us! We will reach out to you soon!");
+          window.location.reload();
+        } else {
+          this.setState({errormessages:"Internal Server Error"});
+        }
+      })
   }
   render() {
     let textareastyle = {
@@ -192,6 +218,15 @@ class Join extends Component {
               organization, and will study its principles and acquaint myself with
               its purposes.<span className="requiredstar">*</span></label><br/>
           </div>
+          <p>Dues Rate Based on Monthly Income</p>
+          <select
+            value={this.state.duesValue}
+            onChange={this.handleSelectChange}>
+            <option value="">Choose your Dues</option>
+            <option value="minimum">Under $2,000 = $11 per month</option>
+            <option value="standard">$2,000 – 3,500 = $22 per month</option>
+            <option value="maximum">Over $3,500 = $33 per month</option>
+          </select>
           <p>If you would like to, answer the questions below to help us get to know you!</p>
           <div className="form-group">
             <label htmlFor="why">Why are you joining the IWW?</label><br/>
