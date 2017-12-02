@@ -28,6 +28,10 @@ class Join extends Component {
     if (window.innerWidth <= 640){
       window.scrollTo(0, 0);
     }
+    request
+      .post(`https://class-improvements-backend.herokuapp.com/wakeup`)
+      .end((err, res) => {console.log(res);})
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   updateFromField(stateKey) {
     return (event) => {
@@ -38,9 +42,7 @@ class Join extends Component {
     this.setState({[event.target.id]: !this.state[event.target.id]});
   }
   handleSelectChange = (event) => {
-    this.setState({ duesValue: event.target.value },()=>{
-      console.log(this.state.duesValue);
-    });
+    this.setState({ duesValue: event.target.value });
   }
   submitform(event){
     event.preventDefault();
@@ -70,8 +72,8 @@ class Join extends Component {
       duesValue: this.state.duesValue,
     }
     request
-      .post(`http://localhost:5000/submitapplication`)
-      // .post(`https://class-improvements-backend.herokuapp.com/submitapplication`)
+      // .post(`http://localhost:5000/submitapplication`)
+      .post(`https://class-improvements-backend.herokuapp.com/submitapplication`)
       .send(data)
       .end((err, res) => {
         if(res === undefined){
