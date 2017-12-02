@@ -11,6 +11,7 @@ class Join extends Component {
       errormessages: false,
     };
     this.submitform=this.submitform.bind(this);
+    this.handlecheckboxchange=this.handlecheckboxchange.bind(this);
   }
   componentWillMount(){
     if (window.innerWidth <= 640){
@@ -21,6 +22,9 @@ class Join extends Component {
     return (event) => {
       this.setState({[stateKey]: event.target.value, errormessages:false});
     }
+  }
+  handlecheckboxchange = (event) => {
+    this.setState({[event.target.id]: !this.state[event.target.id]});
   }
   submitform(event){
     event.preventDefault();
@@ -156,6 +160,26 @@ class Join extends Component {
             value={this.state.occupation}
             placeholder="occupation"
             id="occupation"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="worker">Worker:</label><br/>
+            <input style={textareastyle}
+            type="checkbox" onChange={this.handlecheckboxchange}
+            checked={this.state.worker}
+            value={this.state.worker}
+            placeholder="worker"
+            id="worker"
+            required="true"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="constitution">Constitution:</label><br/>
+            <input style={textareastyle}
+            type="checkbox" onChange={this.handlecheckboxchange}
+            checked={this.state.constitution}
+            value={this.state.constitution}
+            placeholder="constitution"
+            id="constitution"
             required="true"/>
           </div>
           <div className="form-group">
