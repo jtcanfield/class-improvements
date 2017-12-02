@@ -79,6 +79,7 @@ class Join extends Component {
           <h4>Join Us!</h4>
           <h5><a href="https://www.iww.org/PDF/Forms/join.pdf" target="_blank" rel="noopener noreferrer">You can download and print the form here ...</a></h5>
           <p>Or you can fill out the form electronically below!</p>
+          <p>Items marked with a star<span className="requiredstar">*</span> are required.</p>
         </div>
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
@@ -172,71 +173,65 @@ class Join extends Component {
             required="true"/>
           </div>
           <div className="form-group">
-            <label htmlFor="worker">Worker:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
-            type="checkbox" onChange={this.handlecheckboxchange}
+            <input type="checkbox" onChange={this.handlecheckboxchange}
             checked={this.state.worker}
             value={this.state.worker}
-            placeholder="worker"
             id="worker"
             required="true"/>
+            <label htmlFor="worker">I affirm that I am a worker and that I am not an employer.<span className="requiredstar">*</span></label><br/>
           </div>
           <div className="form-group">
-            <label htmlFor="constitution">Constitution:<span className="requiredstar">*</span></label><br/>
             <input style={textareastyle}
             type="checkbox" onChange={this.handlecheckboxchange}
             checked={this.state.constitution}
             value={this.state.constitution}
-            placeholder="constitution"
             id="constitution"
             required="true"/>
+            <label htmlFor="constitution">I agree to abide by the constitution and regulations of this
+              organization, and will study its principles and acquaint myself with
+              its purposes.<span className="requiredstar">*</span></label><br/>
           </div>
+          <p>If you would like to, answer the questions below to help us get to know you!</p>
           <div className="form-group">
-            <label htmlFor="why">why:</label><br/>
+            <label htmlFor="why">Why are you joining the IWW?</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('why')}
             value={this.state.why}
-            placeholder="why"
             id="why"/>
           </div>
           <div className="form-group">
-            <label htmlFor="heardfrom">heardfrom:</label><br/>
+            <label htmlFor="heardfrom">How did you hear about the IWW?</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('heardfrom')}
             value={this.state.heardfrom}
-            placeholder="heardfrom"
             id="heardfrom"/>
           </div>
           <div className="form-group">
-            <label htmlFor="involved">involved:</label><br/>
+            <label htmlFor="involved">How involved do you expect to be? What kind of activities would you like to participate in?</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('involved')}
             value={this.state.involved}
-            placeholder="involved"
             id="involved"/>
           </div>
           <div className="form-group">
-            <label htmlFor="skills">skills:</label><br/>
+            <label htmlFor="skills">Please describe any special skills that you may have.</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('skills')}
             value={this.state.skills}
-            placeholder="skills"
             id="skills"/>
           </div>
           <div className="form-group">
-            <label htmlFor="otherorganizations">otherorganizations:</label><br/>
+            <label htmlFor="otherorganizations">Have you been involved in other organizations? If so, which ones and what kind of activities did you get involved in as a member?</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('otherorganizations')}
             value={this.state.otherorganizations}
-            placeholder="otherorganizations"
             id="otherorganizations"/>
           </div>
           <div className="form-group">
-            <label htmlFor="internet">internet:</label><br/>
+            <label htmlFor="internet">Do you have consistent internet access?</label><br/>
             <textarea type="text" style={textareastyle} rows="5"
             onChange={this.updateFromField('internet')}
             value={this.state.internet}
-            placeholder="internet"
             id="internet"/>
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
