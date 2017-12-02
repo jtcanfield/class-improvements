@@ -44,7 +44,8 @@ class Join extends Component {
     //   message: this.state.message
     // }
     // request
-    //   .post(`https://class-improvements-backend.herokuapp.com/sendemail`)
+    // .post(`http://localhost:5000/submitapplication`)
+    //   .post(`https://class-improvements-backend.herokuapp.com/submitapplication`)
     //   .send(data)
     //   .end((err, res) => {
     //     if(res === undefined){
