@@ -217,7 +217,7 @@ class Join extends Component {
           <select
             value={this.state.duesValue}
             onChange={this.handleSelectChange}>
-            <option value="">Choose your Dues</option>
+            <option value="">Choose your Dues (income per month)</option>
             <option value="minimum">Under $2,000 = $11 per month</option>
             <option value="standard">$2,000 – 3,500 = $22 per month</option>
             <option value="maximum">Over $3,500 = $33 per month</option>
