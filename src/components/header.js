@@ -98,6 +98,11 @@ class Header extends Component {
             to="/posters">
             Posters
           </NavLink>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/dues">
+            Pay Dues
+          </NavLink>
         </div>
         <div onClick={this.click} onTouchStart={this.click} className={openmodalbackground}></div>
       </div>
