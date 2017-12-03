@@ -65,19 +65,6 @@ class Contact extends Component {
       "frameborder":"0",
       "allowTransparency":"true",
     }
-    let textareastyle = {
-      "width":"100%",
-      "maxWidth":`500px`,
-      "border":"2px solid black",
-    }
-    let submitbutton = {
-      "width":`100%`,
-      "maxWidth":`500px`,
-      "backgroundColor":`red`,
-      "fontSize":`24px`,
-      "color":`white`,
-      "border":`0`,
-    }
     return (
       <div className="Contact component">
         <h4 className="leftaligned">Contact Us</h4>
@@ -90,7 +77,7 @@ class Contact extends Component {
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email:</label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="email" onChange={this.updateFromField('email')}
             value={this.state.email}
             placeholder="email"
@@ -99,7 +86,7 @@ class Contact extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="phone">Phone:</label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="tel" onChange={this.updateFromField('phone')}
             value={this.state.phone}
             placeholder="phone"
@@ -108,7 +95,7 @@ class Contact extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('message')}
             value={this.state.message}
             placeholder="message"
@@ -117,7 +104,7 @@ class Contact extends Component {
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
           <br/><div>
-            <button style={submitbutton} type="submit" onClick={event => this.submitform(event)}>
+            <button className="submitbutton" type="submit" onClick={event => this.submitform(event)}>
               Send Message
             </button>
           </div>
