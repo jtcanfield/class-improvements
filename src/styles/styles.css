@@ -222,6 +222,10 @@ iframe{
     border-bottom: 1px solid #847878;
   }
 
+  .iwwlogo{
+    max-height: 200px;
+  }
+
   .modalbutton{
     -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
     -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.21);
