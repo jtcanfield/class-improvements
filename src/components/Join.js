@@ -18,13 +18,13 @@ class Join extends Component {
       worker: false,
       constitution: false,
       errormessages: false,
+      duesValue: "",
       why: "",
       heardfrom: "",
       involved: "",
       skills: "",
       otherorganizations: "",
       internet: "",
-      duesValue: "",
     };
     this.submitform=this.submitform.bind(this);
     this.handlecheckboxchange=this.handlecheckboxchange.bind(this);
@@ -95,19 +95,6 @@ class Join extends Component {
       })
   }
   render() {
-    let textareastyle = {
-      "width":"100%",
-      "maxWidth":`500px`,
-      "border":"2px solid black",
-    }
-    let submitbutton = {
-      "width":`100%`,
-      "maxWidth":`500px`,
-      "backgroundColor":`red`,
-      "fontSize":`24px`,
-      "color":`white`,
-      "border":`0`,
-    }
     return (
       <div className="Join component">
         <div className="leftaligned">
@@ -119,7 +106,7 @@ class Join extends Component {
         <form className="enterForm" onSubmit={this.handleFormSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('name')}
             value={this.state.name}
             placeholder="name"
@@ -128,7 +115,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="address">Address:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('address')}
             value={this.state.address}
             placeholder="address"
@@ -137,7 +124,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="city">City:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('city')}
             value={this.state.city}
             placeholder="city"
@@ -146,7 +133,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="state">State:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('state')}
             value={this.state.state}
             placeholder="state"
@@ -155,7 +142,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="zip">Zip:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('zip')}
             value={this.state.zip}
             placeholder="zip"
@@ -164,7 +151,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="country">Country:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('country')}
             value={this.state.country}
             placeholder="country"
@@ -173,7 +160,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="email" onChange={this.updateFromField('email')}
             value={this.state.email}
             placeholder="email"
@@ -182,7 +169,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="phone">phone:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="tel" onChange={this.updateFromField('phone')}
             value={this.state.phone}
             placeholder="phone"
@@ -191,7 +178,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="employer">Employer:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('employer')}
             value={this.state.employer}
             placeholder="employer"
@@ -200,7 +187,7 @@ class Join extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="occupation">Occupation:<span className="requiredstar">*</span></label><br/>
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="text" onChange={this.updateFromField('occupation')}
             value={this.state.occupation}
             placeholder="occupation"
@@ -216,7 +203,7 @@ class Join extends Component {
             <label htmlFor="worker">I affirm that I am a worker and that I am not an employer.<span className="requiredstar">*</span></label><br/>
           </div>
           <div className="form-group">
-            <input style={textareastyle}
+            <input className="textareastyle"
             type="checkbox" onChange={this.handlecheckboxchange}
             checked={this.state.constitution}
             value={this.state.constitution}
@@ -238,49 +225,49 @@ class Join extends Component {
           <p>If you would like to, answer the questions below to help us get to know you!</p>
           <div className="form-group">
             <label htmlFor="why">Why are you joining the IWW?</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('why')}
             value={this.state.why}
             id="why"/>
           </div>
           <div className="form-group">
             <label htmlFor="heardfrom">How did you hear about the IWW?</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('heardfrom')}
             value={this.state.heardfrom}
             id="heardfrom"/>
           </div>
           <div className="form-group">
             <label htmlFor="involved">How involved do you expect to be? What kind of activities would you like to participate in?</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('involved')}
             value={this.state.involved}
             id="involved"/>
           </div>
           <div className="form-group">
             <label htmlFor="skills">Please describe any special skills that you may have.</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('skills')}
             value={this.state.skills}
             id="skills"/>
           </div>
           <div className="form-group">
             <label htmlFor="otherorganizations">Have you been involved in other organizations? If so, which ones and what kind of activities did you get involved in as a member?</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('otherorganizations')}
             value={this.state.otherorganizations}
             id="otherorganizations"/>
           </div>
           <div className="form-group">
             <label htmlFor="internet">Do you have consistent internet access?</label><br/>
-            <textarea type="text" style={textareastyle} rows="5"
+            <textarea type="text" className="textareastyle" rows="5"
             onChange={this.updateFromField('internet')}
             value={this.state.internet}
             id="internet"/>
           </div>
           {this.state.errormessages ? (this.state.errormessages):"" }
           <br/><div>
-            <button style={submitbutton} type="submit" onClick={event => this.submitform(event)}>
+            <button className="submitbutton" type="submit" onClick={event => this.submitform(event)}>
               Submit Application
             </button>
           </div>
