@@ -13,12 +13,12 @@ class Dues extends Component {
           <input type="hidden" name="cmd" value="_s-xclick"/>
           <input type="hidden" name="hosted_button_id" value="LHL3TDRYT7PWW"/>
           <input type="hidden" name="on0" value="Income Per Month Dues"/>
-          Income Per Month Dues<br/><br/>
+          Income Per Month --- Dues<br/><br/>
           <select name="os0">
-          	<option value="Unemployed">Unemployed $6.00 USD</option>
-          	<option value="Under $2,000/mo">Under $2,000/mo $11.00 USD</option>
-          	<option value="$2,000 – $3,500/mo">$2,000 – $3,500/mo $22.00 USD</option>
-          	<option value="Over $3,500/mo">Over $3,500/mo $33.00 USD</option>
+          	<option value="Unemployed">Unemployed --- $6.00 USD</option>
+          	<option value="Under $2,000/mo">Under $2,000/mo --- $11.00 USD</option>
+          	<option value="$2,000 – $3,500/mo">$2,000 - $3,500/mo --- $22.00 USD</option>
+          	<option value="Over $3,500/mo">Over $3,500/mo --- $33.00 USD</option>
           </select><br/><br/>
           <input type="hidden" name="on1" value="Please enter your name"/>
           Please enter your name<br/><br/>
