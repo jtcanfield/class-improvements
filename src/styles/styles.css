@@ -176,6 +176,10 @@ iframe{
   border: 2px solid black;
 }
 
+.dues_form, .dues_form input[type="text"], .dues_form select{
+  border: 1px solid #555555;
+}
+
 @media (max-width: 640px) {
   .header_logo_title{
     margin-bottom: 15px;
