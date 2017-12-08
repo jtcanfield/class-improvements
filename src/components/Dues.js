@@ -16,6 +16,10 @@ class Dues extends Component {
           Note: Dues paid here will go directly to the Raleigh-Durham
           branch of the IWW. You cannot pay dues to another branch.
         </small>
+        <br/>
+        <small className="leftaligned">
+          PayPal charges a small fee for every transaction. That fee has been included in the prices below.
+        </small>
         <p></p>
         <div className="dues_form">
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -24,10 +28,10 @@ class Dues extends Component {
             <input type="hidden" name="on0" value="Income Per Month Dues"/>
             Income Per Month --- Dues<br/><br/>
             <select name="os0">
-            	<option value="Unemployed ---">Unemployed --- $6.00 USD</option>
-            	<option value="Under $2,000/mo ---">Under $2,000/mo --- $11.00 USD</option>
-            	<option value="$2,000 - $3,500/mo ---">$2,000 - $3,500/mo --- $22.00 USD</option>
-            	<option value="Over $3,500/mo ---">Over $3,500/mo --- $33.00 USD</option>
+            	<option value="Unemployed ---">Unemployed --- $7.50 USD</option>
+            	<option value="Under $2,000/mo ---">Under $2,000/mo --- $12.70 USD</option>
+            	<option value="$2,000 - $3,500/mo ---">$2,000 - $3,500/mo --- $23.00 USD</option>
+            	<option value="Over $3,500/mo ---">Over $3,500/mo --- $34.30 USD</option>
             </select><br/><br/>
             <input type="hidden" name="on1" value="Enter your first and last name"/>
             Enter your first and last name<br/><br/>
