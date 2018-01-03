@@ -14,7 +14,7 @@ class Posters extends Component {
     }
     return (
       <div className="Posters component" itemscope itemtype="http://schema.org/WebPage">
-        <div>
+        <div itemscope itemprop="mainContentOfPage">
           <h4 className="leftaligned">Posters</h4>
           <div className="poster_holder">
             <a href="./gdcflyer.jpg" target="_blank" rel="noopener noreferrer">

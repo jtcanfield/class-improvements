@@ -12,7 +12,7 @@ class About extends Component {
     }
     return (
       <div className="About component" itemscope itemtype="http://schema.org/WebPage">
-        <div className="leftaligned">
+        <div className="leftaligned" itemscope itemprop="mainContentOfPage">
           <h4>What is the IWW?</h4>
           <p>
             The IWW is the Industrial Workers of the World (sometimes called “the

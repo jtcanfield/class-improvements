@@ -36,7 +36,7 @@ class Homepage extends Component {
     }
     return (
       <div className="Homepage component" itemscope itemtype="http://schema.org/WebPage">
-        <div>
+        <div itemscope itemprop="mainContentOfPage">
           <h4 className="leftaligned">Recent News</h4>
           <div>
             <p>

@@ -17,7 +17,7 @@ class Gdc extends Component {
     }
     return (
       <div className="Gdc component" itemscope itemtype="http://schema.org/WebPage">
-        <div>
+        <div itemscope itemprop="mainContentOfPage">
           <img alt="General Defense Comittee Holding Anti-Klan Banner" style={bannerpicture} src="./GDCantiklanbanner.jpg"/>
           <h4 className="leftaligned">General Defense Committee</h4>
           <p>The Industrial Workers of the World (IWW)'s General Defense Committee (GDC) was formed to defend working class people fighting for their rights on the picket line and in their community.</p>

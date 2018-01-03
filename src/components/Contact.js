@@ -67,7 +67,7 @@ class Contact extends Component {
     }
     return (
       <div className="Contact component" itemscope itemtype="http://schema.org/WebPage">
-        <div>
+        <div itemscope itemprop="mainContentOfPage">
           <h4 className="leftaligned">Contact Us</h4>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
