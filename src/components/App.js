@@ -17,6 +17,7 @@ import Posters from './Posters.js';
 import Redirectpage from './Redirect.js';
 import Dues from './Dues.js';
 import Duestaken from './Duestaken.js';
+import SitemapDownload from './SitemapDownload.js';
 import {init as firebaseInit} from './javascripts/firebase.js'
 
 const store = createStore(
@@ -29,7 +30,9 @@ class App extends Component {
     firebaseInit()
   }
   render() {
-    // <Route path="/gdcposter.jpg" render={(props) => ( "./posters/gdcposter.jpg" )}/>
+    // <Route path="/gdcflyer.jpg" render={(props) => ( "./posters/gdcflyer.jpg" )}/>
+    // <Route path="/gdcflyer.jpg" render={(props) => ( <img alt="GDC Flyer" src="./gdcflyer.jpg"/> )}/>
+    // <Route path="" render={(props) => ( <Redirectpage/> )}/>
     return (
       <Provider store={store}>
         <BrowserRouter>
@@ -47,10 +50,7 @@ class App extends Component {
               <Route path="/joinus" render={(props) => ( <Join/> )}/>
               <Route path="/dues" render={(props) => ( <Dues/> )}/>
               <Route path="/success" render={(props) => ( <Duestaken/> )}/>
-              <Route path="/gdcflyer.jpg" render={(props) => ( <img alt="GDC Flyer" src="./gdcflyer.jpg"/> )}/>
-              <Route path="/iepostercolor.jpg" render={(props) => ( <img alt="Community Defense Poster" src="./iepostercolor.jpg"/> )}/>
-              <Route path="/iwwantinaziposter.jpg" render={(props) => ( <img alt="IWW Anti-Nazi Poster" src="./iwwantinaziposter.jpg"/> )}/>
-              <Route path="" render={(props) => ( <Redirectpage/> )}/>
+              <Route path="/sitemap" render={(props) => ( <SitemapDownload/> )}/>
             </Switch>
           </BaseLayout>
         </BrowserRouter>
