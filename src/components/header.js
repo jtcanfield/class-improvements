@@ -26,9 +26,9 @@ class Header extends Component {
       openmodalbackground = "openmodalbackground";
     }
     return (
-      <div className="Header" itemscope itemtype="http://schema.org/WPHeader">
+      <div className="Header" itemScope itemType="http://schema.org/WPHeader">
         <div className="header_logo_title">
-          <div className="title_of_page" itemprop="name">
+          <div className="title_of_page" itemProp="name">
             Raleigh-Durham Industrial Workers of the World
           </div>
           <div className="fade"></div>
@@ -52,51 +52,51 @@ class Header extends Component {
           <span alt="open menu" className={actualarrow}></span>
           <div onClick={this.click} className={hitbox}></div>
         </div>
-        <div role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" onClick={this.click} className={modalclasses}>
+        <div role="navigation" itemScope itemType="http://schema.org/SiteNavigationElement" onClick={this.click} className={modalclasses}>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/home">
-            <span itemprop="name">Home</span>
+            itemProp="url" to="/home">
+            <span itemProp="name">Home</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/about">
-            <span itemprop="name">About</span>
+            itemProp="url" to="/about">
+            <span itemProp="name">About</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/contact">
-            <span itemprop="name">Contact</span>
+            itemProp="url" to="/contact">
+            <span itemProp="name">Contact</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/events">
-            <span itemprop="name">Events</span>
+            itemProp="url" to="/events">
+            <span itemProp="name">Events</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/iwoc">
-            <span itemprop="name">IWOC</span>
+            itemProp="url" to="/iwoc">
+            <span itemProp="name">IWOC</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/gdc">
-            <span itemprop="name">GDC</span>
+            itemProp="url" to="/gdc">
+            <span itemProp="name">GDC</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/wfw">
-            <span itemprop="name">WFW</span>
+            itemProp="url" to="/wfw">
+            <span itemProp="name">WFW</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/posters">
-            <span itemprop="name">Posters</span>
+            itemProp="url" to="/posters">
+            <span itemProp="name">Posters</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            itemprop="url" to="/dues">
-            <span itemprop="name">Pay Dues</span>
+            itemProp="url" to="/dues">
+            <span itemProp="name">Pay Dues</span>
           </NavLink>
           <a href="https://www.paypal.me/rdiwwgmb" target="_blank"
           rel="noopener noreferrer">

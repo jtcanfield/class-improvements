@@ -96,8 +96,8 @@ class Join extends Component {
   }
   render() {
     return (
-      <div className="Join component" itemscope itemtype="http://schema.org/WebPage">
-        <div itemscope itemprop="mainContentOfPage">
+      <div className="Join component" itemScope itemType="http://schema.org/WebPage">
+        <div itemScope itemProp="mainContentOfPage">
           <div className="leftaligned">
             <h4>Join Us!</h4>
             <h5><a href="https://www.iww.org/PDF/Forms/join.pdf" target="_blank" rel="noopener noreferrer">You can download and print the form here ...</a></h5>

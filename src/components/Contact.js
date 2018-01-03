@@ -66,8 +66,8 @@ class Contact extends Component {
       "allowTransparency":"true",
     }
     return (
-      <div className="Contact component" itemscope itemtype="http://schema.org/WebPage">
-        <div itemscope itemprop="mainContentOfPage">
+      <div className="Contact component" itemScope itemType="http://schema.org/WebPage">
+        <div itemScope itemProp="mainContentOfPage">
           <h4 className="leftaligned">Contact Us</h4>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"

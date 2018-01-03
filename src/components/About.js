@@ -11,8 +11,8 @@ class About extends Component {
       "color":"#847878",
     }
     return (
-      <div className="About component" itemscope itemtype="http://schema.org/WebPage">
-        <div className="leftaligned" itemscope itemprop="mainContentOfPage">
+      <div className="About component" itemScope itemType="http://schema.org/WebPage">
+        <div className="leftaligned" itemScope itemProp="mainContentOfPage">
           <h4>What is the IWW?</h4>
           <p>
             The IWW is the Industrial Workers of the World (sometimes called “the

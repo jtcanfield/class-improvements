@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Footer extends Component {
   render() {
     return (
-      <div className="Footer" itemscope itemtype="http://schema.org/WPFooter">
+      <div className="Footer" itemScope itemType="http://schema.org/WPFooter">
         <p>
           See us on Facebook at <a href="https://www.facebook.com/triangleiww/" target="_blank" rel="noopener noreferrer">
             www.facebook.com/triangleiww

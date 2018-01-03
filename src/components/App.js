@@ -38,6 +38,7 @@ class App extends Component {
         <BrowserRouter>
           <BaseLayout>
             <Switch>
+              <Route exact path="/" render={(props) => ( <Redirectpage/> )}/>
               <Route path="/about" render={(props) => ( <About/> )}/>
               <Route path="/contact" render={(props) => ( <Contact/> )}/>
               <Route path="/events" render={(props) => ( <Events/> )}/>
@@ -46,11 +47,11 @@ class App extends Component {
               <Route path="/wfw" render={(props) => ( <Wfw/> )}/>
               <Route path="/donate" render={(props) => ( <Donate/> )}/>
               <Route path="/posters" render={(props) => ( <Posters/> )}/>
-              <Route path="/home" render={(props) => ( <Homepage/> )}/>
               <Route path="/joinus" render={(props) => ( <Join/> )}/>
               <Route path="/dues" render={(props) => ( <Dues/> )}/>
               <Route path="/success" render={(props) => ( <Duestaken/> )}/>
               <Route path="/sitemap" render={(props) => ( <SitemapDownload/> )}/>
+              <Route path="/home" render={(props) => ( <Homepage/> )}/>
             </Switch>
           </BaseLayout>
         </BrowserRouter>

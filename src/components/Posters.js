@@ -13,8 +13,8 @@ class Posters extends Component {
       "border":"1px solid black",
     }
     return (
-      <div className="Posters component" itemscope itemtype="http://schema.org/WebPage">
-        <div itemscope itemprop="mainContentOfPage">
+      <div className="Posters component" itemScope itemType="http://schema.org/WebPage">
+        <div itemScope itemProp="mainContentOfPage">
           <h4 className="leftaligned">Posters</h4>
           <div className="poster_holder">
             <a href="./gdcflyer.jpg" target="_blank" rel="noopener noreferrer">

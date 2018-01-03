@@ -38,8 +38,8 @@ class Events extends Component {
       }
     }
     return (
-      <div className="Events component" style={eventsstyles} itemscope itemtype="http://schema.org/WebPage">
-        <div itemscope itemprop="mainContentOfPage">
+      <div className="Events component" style={eventsstyles} itemScope itemType="http://schema.org/WebPage">
+        <div itemScope itemProp="mainContentOfPage">
           <h4 className="leftaligned">Upcoming Events</h4>
           <p className="leftaligned">We usually have our General Membership Branch meetings on the second Saturday of every month. This is subject to change, so keep an eye on our events page!</p>
           <iframe title="events" src={iframelink}

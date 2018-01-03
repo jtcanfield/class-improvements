@@ -34,8 +34,8 @@ class Wfw extends Component {
       }
     }
     return (
-      <div className="Wfw component" itemscope itemtype="http://schema.org/WebPage">
-        <div itemscope itemprop="mainContentOfPage">
+      <div className="Wfw component" itemScope itemType="http://schema.org/WebPage">
+        <div itemScope itemProp="mainContentOfPage">
           <h4 className="leftaligned">Workers Feeding Workers</h4>
           <iframe title="news" src={iframelink}
           style={iframestyles}></iframe>

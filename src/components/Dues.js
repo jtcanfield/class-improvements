@@ -8,8 +8,8 @@ class Dues extends Component {
   }
   render() {
     return (
-      <div className="Dues component" itemscope itemtype="http://schema.org/WebPage">
-        <div itemscope itemprop="mainContentOfPage">
+      <div className="Dues component" itemScope itemType="http://schema.org/WebPage">
+        <div itemScope itemProp="mainContentOfPage">
           <h4 className="leftaligned">
             Pay Your Dues to the Raleigh-Durham IWW
           </h4>
