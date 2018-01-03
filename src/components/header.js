@@ -56,47 +56,47 @@ class Header extends Component {
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/home">
-            Home
+            <span itemprop="name">Home</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/about">
-            About
+            <span itemprop="name">About</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/contact">
-            Contact
+            <span itemprop="name">Contact</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/events">
-            Events
+            <span itemprop="name">Events</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/iwoc">
-            IWOC
+            <span itemprop="name">IWOC</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/gdc">
-            GDC
+            <span itemprop="name">GDC</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/wfw">
-            WFW
+            <span itemprop="name">WFW</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/posters">
-            Posters
+            <span itemprop="name">Posters</span>
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemprop="url" to="/dues">
-            Pay Dues
+            <span itemprop="name">Pay Dues</span>
           </NavLink>
           <a href="https://www.paypal.me/rdiwwgmb" target="_blank"
           rel="noopener noreferrer">
