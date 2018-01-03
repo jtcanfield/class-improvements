@@ -38,11 +38,13 @@ class Events extends Component {
       }
     }
     return (
-      <div className="Events component" style={eventsstyles}>
-        <h4 className="leftaligned">Upcoming Events</h4>
-        <p className="leftaligned">We usually have our General Membership Branch meetings on the second Saturday of every month. This is subject to change, so keep an eye on our events page!</p>
-        <iframe title="events" src={iframelink}
-        style={iframestyles}></iframe>
+      <div className="Events component" style={eventsstyles} itemscope itemtype="http://schema.org/WebPage">
+        <div>
+          <h4 className="leftaligned">Upcoming Events</h4>
+          <p className="leftaligned">We usually have our General Membership Branch meetings on the second Saturday of every month. This is subject to change, so keep an eye on our events page!</p>
+          <iframe title="events" src={iframelink}
+          style={iframestyles}></iframe>
+        </div>
       </div>
     );
   }

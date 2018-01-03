@@ -11,7 +11,7 @@ class About extends Component {
       "color":"#847878",
     }
     return (
-      <div className="About component">
+      <div className="About component" itemscope itemtype="http://schema.org/WebPage">
         <div className="leftaligned">
           <h4>What is the IWW?</h4>
           <p>

@@ -8,7 +8,7 @@ class IWOC extends Component {
   }
   render() {
     return (
-      <div className="IWOC component">
+      <div className="IWOC component" itemscope itemtype="http://schema.org/WebPage">
         <div className="leftaligned">
           <h4>Incarcerated Workers Organizing Committee</h4>
           <p>Blog: <a href="https://raleighdurhamiwoc.wordpress.com/" target="_blank" rel="noopener noreferrer">

@@ -66,52 +66,54 @@ class Contact extends Component {
       "allowTransparency":"true",
     }
     return (
-      <div className="Contact component">
-        <h4 className="leftaligned">Contact Us</h4>
-        <NavLink className="verti-center header_link"
-          activeClassName="active_header_link"
-          to="/joinus">
-          Want to join? Download the form or join electronically here!
-        </NavLink>
-        <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
-        <form className="enterForm" onSubmit={this.handleFormSubmit}>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label><br/>
-            <input className="textareastyle"
-            type="email" onChange={this.updateFromField('email')}
-            value={this.state.email}
-            placeholder="email"
-            id="email"
-            required="true"/>
-          </div>
-          <div className="form-group">
-            <label htmlFor="phone">Phone:</label><br/>
-            <input className="textareastyle"
-            type="tel" onChange={this.updateFromField('phone')}
-            value={this.state.phone}
-            placeholder="phone"
-            id="phone"
-            required="true"/>
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message:</label><br/>
-            <textarea type="text" className="textareastyle" rows="5"
-            onChange={this.updateFromField('message')}
-            value={this.state.message}
-            placeholder="message"
-            id="message"
-            required="true"/>
-          </div>
-          {this.state.errormessages ? (this.state.errormessages):"" }
-          <br/><div>
-            <button className="submitbutton" type="submit" onClick={event => this.submitform(event)}>
-              Send Message
-            </button>
-          </div>
-        </form>
-        <br/><br/>
-        <iframe title="events" src={iframelink}
-        style={iframestyles}></iframe>
+      <div className="Contact component" itemscope itemtype="http://schema.org/WebPage">
+        <div>
+          <h4 className="leftaligned">Contact Us</h4>
+          <NavLink className="verti-center header_link"
+            activeClassName="active_header_link"
+            to="/joinus">
+            Want to join? Download the form or join electronically here!
+          </NavLink>
+          <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
+          <form className="enterForm" onSubmit={this.handleFormSubmit}>
+            <div className="form-group">
+              <label htmlFor="email">Email:</label><br/>
+              <input className="textareastyle"
+              type="email" onChange={this.updateFromField('email')}
+              value={this.state.email}
+              placeholder="email"
+              id="email"
+              required="true"/>
+            </div>
+            <div className="form-group">
+              <label htmlFor="phone">Phone:</label><br/>
+              <input className="textareastyle"
+              type="tel" onChange={this.updateFromField('phone')}
+              value={this.state.phone}
+              placeholder="phone"
+              id="phone"
+              required="true"/>
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message:</label><br/>
+              <textarea type="text" className="textareastyle" rows="5"
+              onChange={this.updateFromField('message')}
+              value={this.state.message}
+              placeholder="message"
+              id="message"
+              required="true"/>
+            </div>
+            {this.state.errormessages ? (this.state.errormessages):"" }
+            <br/><div>
+              <button className="submitbutton" type="submit" onClick={event => this.submitform(event)}>
+                Send Message
+              </button>
+            </div>
+          </form>
+          <br/><br/>
+          <iframe title="events" src={iframelink}
+          style={iframestyles}></iframe>
+        </div>
       </div>
     );
   }

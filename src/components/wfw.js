@@ -34,10 +34,12 @@ class Wfw extends Component {
       }
     }
     return (
-      <div className="Wfw component">
-        <h4 className="leftaligned">Workers Feeding Workers</h4>
-        <iframe title="news" src={iframelink}
-        style={iframestyles}></iframe>
+      <div className="Wfw component" itemscope itemtype="http://schema.org/WebPage">
+        <div>
+          <h4 className="leftaligned">Workers Feeding Workers</h4>
+          <iframe title="news" src={iframelink}
+          style={iframestyles}></iframe>
+        </div>
       </div>
     );
   }
