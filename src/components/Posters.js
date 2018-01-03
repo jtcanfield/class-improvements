@@ -32,7 +32,7 @@ class Posters extends Component {
             <h5>
               Anti-Nazi Poster
             </h5>
-            <img alt="Anti-Nazi Poster" src="./iwwantinaziposter.jpg" style={posters}/>
+            <img alt="IWW Anti-Nazi Poster" src="./iwwantinaziposter.jpg" style={posters}/>
           </a>
         </div>
       </div>

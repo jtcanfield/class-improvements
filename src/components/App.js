@@ -49,7 +49,7 @@ class App extends Component {
               <Route path="/success" render={(props) => ( <Duestaken/> )}/>
               <Route path="/gdcflyer.jpg" render={(props) => ( <img alt="GDC Flyer" src="./gdcflyer.jpg"/> )}/>
               <Route path="/iepostercolor.jpg" render={(props) => ( <img alt="Community Defense Poster" src="./iepostercolor.jpg"/> )}/>
-              <Route path="/iwwantinaziposter.jpg" render={(props) => ( <img alt="Anti-Nazi Poster" src="./iwwantinaziposter.jpg"/> )}/>
+              <Route path="/iwwantinaziposter.jpg" render={(props) => ( <img alt="IWW Anti-Nazi Poster" src="./iwwantinaziposter.jpg"/> )}/>
               <Route path="" render={(props) => ( <Redirectpage/> )}/>
             </Switch>
           </BaseLayout>
