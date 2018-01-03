@@ -32,7 +32,6 @@ class App extends Component {
   render() {
     // <Route path="/gdcflyer.jpg" render={(props) => ( "./posters/gdcflyer.jpg" )}/>
     // <Route path="/gdcflyer.jpg" render={(props) => ( <img alt="GDC Flyer" src="./gdcflyer.jpg"/> )}/>
-    // <Route path="" render={(props) => ( <Redirectpage/> )}/>
     // <Route exact path="/" render={(props) => ( <Redirectpage/> )}/>
     return (
       <Provider store={store}>
@@ -52,6 +51,7 @@ class App extends Component {
               <Route path="/success" render={(props) => ( <Duestaken/> )}/>
               <Route path="/sitemap" render={(props) => ( <SitemapDownload/> )}/>
               <Route path="/home" render={(props) => ( <Homepage/> )}/>
+              <Route path="" render={(props) => ( <Redirectpage/> )}/>
             </Switch>
           </BaseLayout>
         </BrowserRouter>
