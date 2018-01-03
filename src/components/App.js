@@ -33,12 +33,12 @@ class App extends Component {
     // <Route path="/gdcflyer.jpg" render={(props) => ( "./posters/gdcflyer.jpg" )}/>
     // <Route path="/gdcflyer.jpg" render={(props) => ( <img alt="GDC Flyer" src="./gdcflyer.jpg"/> )}/>
     // <Route path="" render={(props) => ( <Redirectpage/> )}/>
+    // <Route exact path="/" render={(props) => ( <Redirectpage/> )}/>
     return (
       <Provider store={store}>
         <BrowserRouter>
           <BaseLayout>
             <Switch>
-              <Route exact path="/" render={(props) => ( <Redirectpage/> )}/>
               <Route path="/about" render={(props) => ( <About/> )}/>
               <Route path="/contact" render={(props) => ( <Contact/> )}/>
               <Route path="/events" render={(props) => ( <Events/> )}/>
