@@ -26,9 +26,9 @@ class Header extends Component {
       openmodalbackground = "openmodalbackground";
     }
     return (
-      <div className="Header">
+      <div className="Header" itemscope itemtype="http://schema.org/WPHeader">
         <div className="header_logo_title">
-          <div className="title_of_page">
+          <div className="title_of_page" itemprop="name">
             Raleigh-Durham Industrial Workers of the World
           </div>
           <div className="fade"></div>
@@ -52,50 +52,50 @@ class Header extends Component {
           <span alt="open menu" className={actualarrow}></span>
           <div onClick={this.click} className={hitbox}></div>
         </div>
-        <div onClick={this.click} className={modalclasses}>
+        <div role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" onClick={this.click} className={modalclasses}>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/home">
+            itemprop="url" to="/home">
             Home
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/about">
+            itemprop="url" to="/about">
             About
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/contact">
+            itemprop="url" to="/contact">
             Contact
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/events">
+            itemprop="url" to="/events">
             Events
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/iwoc">
+            itemprop="url" to="/iwoc">
             IWOC
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/gdc">
+            itemprop="url" to="/gdc">
             GDC
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/wfw">
+            itemprop="url" to="/wfw">
             WFW
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/posters">
+            itemprop="url" to="/posters">
             Posters
           </NavLink>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
-            to="/dues">
+            itemprop="url" to="/dues">
             Pay Dues
           </NavLink>
           <a href="https://www.paypal.me/rdiwwgmb" target="_blank"
