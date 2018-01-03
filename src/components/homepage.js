@@ -39,12 +39,6 @@ class Homepage extends Component {
         <h4 className="leftaligned">Recent News</h4>
         <div>
           <p>
-            <a href="LINKHERE" target="_blank" rel="noopener noreferrer">
-            TITLEHERE
-            </a><br/>
-            Its Going Down - February 15, 2016
-          </p>
-          <p>
             <a href="https://itsgoingdown.org/igd-durham-community-quickly-mobilizes-defeat-klan/" target="_blank" rel="noopener noreferrer">
             IGD Durham: Community Quickly Mobilizes to Defeat Klan
             </a><br/>
