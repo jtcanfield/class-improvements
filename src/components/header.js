@@ -32,7 +32,7 @@ class Header extends Component {
             Raleigh-Durham Industrial Workers of the World
           </div>
           <div className="fade"></div>
-          <img alt="Logo of the Industrial Workers of the World" src="./IWW-Raleigh-Durham.png" className="iwwlogo"/>
+          <img alt="Logo of the Industrial Workers of the World" src="./IWW-Raleigh-Durham.svg" className="iwwlogo"/>
           <div className="curveholder">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
              width="1200.000000pt" height="129.000000pt" viewBox="0 0 1200.000000 129.000000"
