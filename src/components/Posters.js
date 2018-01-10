@@ -17,19 +17,19 @@ class Posters extends Component {
         <div itemScope itemProp="mainContentOfPage">
           <h4 className="leftaligned">Posters</h4>
           <div className="poster_holder">
-            <a href="./gdcflyer.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="https://i.imgur.com/UjTfFCs.jpg" target="_blank" rel="noopener noreferrer">
               <h5>
                 General Defense Comittee Flyer
               </h5>
               <img alt="General Defense Comittee Flyer" src="./gdcflyer.jpg" style={posters}/>
             </a>
-            <a href="./iepostercolor.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="https://i.imgur.com/POeC395.jpg" target="_blank" rel="noopener noreferrer">
               <h5>
                 Anti-Identity Evropa Flyer
               </h5>
               <img alt="Community Defense Poster" src="./iepostercolor.jpg" style={posters}/>
             </a>
-            <a href="./iwwantinaziposter.jpg" target="_blank" rel="noopener noreferrer">
+            <a href="https://i.imgur.com/Zyi0al6.jpg" target="_blank" rel="noopener noreferrer">
               <h5>
                 Anti-Nazi Poster
               </h5>
