@@ -74,7 +74,7 @@ class Contact extends Component {
             to="/joinus">
             Want to join? Download the form or join electronically here!
           </NavLink>
-          <p className="leftaligned">Questions? Comments? Want to join? Send us a message here, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
+          <p className="leftaligned">Questions? Comments? Want to get involved? Send us a message below, on Facebook, or email us at <a href="mailto:rdiwwgmb@gmail.com?Subject=Message%20From%20Website" target="_top">rdiwwgmb@gmail.com</a>!</p>
           <form className="enterForm" onSubmit={this.handleFormSubmit}>
             <div className="form-group">
               <label htmlFor="email">Email:</label><br/>
