@@ -26,3 +26,6 @@ firebase.json
 /src/components/javascripts
 
 /originalimages
+
+/src/styles/originalmilk.css
+/src/styles/test.css
