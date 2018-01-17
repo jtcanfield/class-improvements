@@ -22,7 +22,7 @@ class Contact extends Component {
     request
       // .post(`http://localhost:5000/wakeup`)
       .post(`https://class-improvements-backend.herokuapp.com/wakeup`)
-      .end((err, res) => {console.log(res);})
+      .end((err, res) => {console.log("Server is Awake");})
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   updateFromField(stateKey) {
