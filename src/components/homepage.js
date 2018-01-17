@@ -40,6 +40,12 @@ class Homepage extends Component {
           <h4 className="leftaligned">Recent News</h4>
           <div>
             <p>
+              <a href="https://itsgoingdown.org/durham-nc-solidarity-operation-push/" target="_blank" rel="noopener noreferrer">
+              Durham, NC: Solidarity with Operation PUSH
+              </a><br/>
+              Its Going Down - January 15, 2018
+            </p>
+            <p>
               <a href="https://itsgoingdown.org/igd-durham-community-quickly-mobilizes-defeat-klan/" target="_blank" rel="noopener noreferrer">
               IGD Durham: Community Quickly Mobilizes to Defeat Klan
               </a><br/>
