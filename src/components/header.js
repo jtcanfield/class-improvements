@@ -25,13 +25,17 @@ class Header extends Component {
     let actualarrow = "smallarrowright";
     let openmodalbackground = "";
     let dropdownContent = "dropdownContent";
+    let subcommitteesDropdownIcon = "subcommitteesDropdownIcon"
     if(this.state.modalbuttonactive){
       modalclasses = "navlinks shownmodal";
       hitbox = "hitbox shownmodal";
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";
       openmodalbackground = "openmodalbackground";
-      dropdownContent = "dropdownContent";
+    }
+    if (this.state.showSubcommittees){
+      dropdownContent = "dropdownContent showSubcommitteesModal";
+      subcommitteesDropdownIcon = "subcommitteesDropdownIconOpen"
     }
     return (
       <div className="Header" itemScope itemType="http://schema.org/WPHeader">
@@ -82,8 +86,10 @@ class Header extends Component {
             <span itemProp="name">Events</span>
           </NavLink>
           <div id="showSubcommittees" className="verti-center header_link dropdownMenu">
-            <span id="showSubcommittees">Subcommittees</span>
-            <div className="dropdownContent">
+            <span id="showSubcommittees" className={subcommitteesDropdownIcon}>
+              Subcommittees
+            </span>
+            <div className={dropdownContent}>
               <NavLink className="verti-center header_link"
                 activeClassName="active_header_link"
                 itemProp="url" to="/iwoc">

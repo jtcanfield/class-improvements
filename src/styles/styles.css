@@ -184,9 +184,9 @@ iframe{
 
 /* Begin Subcommittees */
 .dropdownMenu{
+  cursor: pointer;
   padding: .375rem .75rem;
   display: inline-block;
-  color: inherit;
   text-decoration: none;
   font-family: 'Merriweather Sans', sans-serif;
 }
@@ -203,13 +203,36 @@ iframe{
 }
 
 .dropdownMenu:hover .dropdownContent{
-  /* display: flex;
-  flex-direction: column; */
   display: block;
+}
+
+.subcommitteesDropdownIcon:after, .subcommitteesDropdownIconOpen:after{
+  content: " ▾";
 }
 /* End Subcommittees */
 
 @media (max-width: 640px) {
+  /* Begin Subcommittees */
+  .dropdownMenu{
+    width: 100%;
+    border-bottom: 1px solid #847878;
+  }
+  .dropdownContent{
+    visibility: hidden;
+    display: none;
+    width: 80%;
+    background-color: #fff;
+  }
+  .showSubcommitteesModal{
+    visibility: visible;
+    display: block;
+    left:200px;
+  }
+  .subcommitteesDropdownIconOpen:after{
+    content: " ▸";
+  }
+  /* End Subcommittees */
+
   .dues_form{
     border: 1px solid #555555;
   }
