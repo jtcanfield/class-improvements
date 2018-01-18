@@ -19,7 +19,7 @@ class Header extends Component {
     let actualarrow = "smallarrowright";
     let openmodalbackground = "";
     if(this.state.modalbuttonactive){
-      modalclasses = "navlinks shownmodal bg-white";
+      modalclasses = "navlinks shownmodal";
       hitbox = "hitbox shownmodal";
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";
