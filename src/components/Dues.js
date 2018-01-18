@@ -29,7 +29,7 @@ class Dues extends Component {
               <input type="hidden" name="on0" value="Income Per Month Dues"/>
               Income Per Month --- Dues<br/><br/>
               <select name="os0">
-              	<option value="Unemployed ---">Unemployed --- $7.52 USD</option>
+              	<option value="Unemployed ---">Unemployed --- $6.49 USD</option>
               	<option value="Under $2,000/mo ---">Under $2,000/mo --- $11.64 USD</option>
               	<option value="$2,000 - $3,500/mo ---">$2,000 - $3,500/mo --- $22.97 USD</option>
               	<option value="Over $3,500/mo ---">Over $3,500/mo --- $34.29 USD</option>
