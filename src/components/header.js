@@ -6,11 +6,17 @@ class Header extends Component {
     super(props)
     this.state = {
       modalbuttonactive:false,
+      showSubcommittees:false,
     };
     this.click = this.click.bind(this)
   }
-  click(){
-    this.setState({modalbuttonactive:!this.state.modalbuttonactive})
+  click = (event) => {
+    console.log(event.target)
+    if (event.target.id === "showSubcommittees"){
+      this.setState({showSubcommittees:!this.state.showSubcommittees})
+    } else {
+      this.setState({modalbuttonactive:!this.state.modalbuttonactive, showSubcommittees:false})
+    }
   }
   render() {
     let modalclasses = "navlinks hiddenmodal";
@@ -18,12 +24,14 @@ class Header extends Component {
     let arrowclasses = "modalbutton hiddenmodal";
     let actualarrow = "smallarrowright";
     let openmodalbackground = "";
+    let dropdownContent = "dropdownContent";
     if(this.state.modalbuttonactive){
       modalclasses = "navlinks shownmodal";
       hitbox = "hitbox shownmodal";
       arrowclasses = "modalbutton shownmodal";
       actualarrow = "smallarrowleft";
       openmodalbackground = "openmodalbackground";
+      dropdownContent = "dropdownContent";
     }
     return (
       <div className="Header" itemScope itemType="http://schema.org/WPHeader">
@@ -73,21 +81,26 @@ class Header extends Component {
             itemProp="url" to="/events">
             <span itemProp="name">Events</span>
           </NavLink>
-          <NavLink className="verti-center header_link"
-            activeClassName="active_header_link"
-            itemProp="url" to="/iwoc">
-            <span itemProp="name">IWOC</span>
-          </NavLink>
-          <NavLink className="verti-center header_link"
-            activeClassName="active_header_link"
-            itemProp="url" to="/gdc">
-            <span itemProp="name">GDC</span>
-          </NavLink>
-          <NavLink className="verti-center header_link"
-            activeClassName="active_header_link"
-            itemProp="url" to="/wfw">
-            <span itemProp="name">WFW</span>
-          </NavLink>
+          <div id="showSubcommittees" className="verti-center header_link dropdownMenu">
+            <span id="showSubcommittees">Subcommittees</span>
+            <div className="dropdownContent">
+              <NavLink className="verti-center header_link"
+                activeClassName="active_header_link"
+                itemProp="url" to="/iwoc">
+                <span itemProp="name">IWOC</span>
+              </NavLink>
+              <NavLink className="verti-center header_link"
+                activeClassName="active_header_link"
+                itemProp="url" to="/gdc">
+                <span itemProp="name">GDC</span>
+              </NavLink>
+              <NavLink className="verti-center header_link"
+                activeClassName="active_header_link"
+                itemProp="url" to="/wfw">
+                <span itemProp="name">WFW</span>
+              </NavLink>
+            </div>
+          </div>
           <NavLink className="verti-center header_link"
             activeClassName="active_header_link"
             itemProp="url" to="/posters">

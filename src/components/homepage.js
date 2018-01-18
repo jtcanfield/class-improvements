@@ -34,9 +34,10 @@ class Homepage extends Component {
         "allowTransparency":"true",
       }
     }
-    let newsArticles = news.map((x) =>{
+    let newsArticles = news.map((x, i) =>{
+      let key = `news${i}`;
       return (
-        <div>
+        <div key={key}>
           <p>
             <a href={x.link} target="_blank" rel="noopener noreferrer">
             {x.title}
