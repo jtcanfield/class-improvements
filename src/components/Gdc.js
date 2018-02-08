@@ -39,7 +39,7 @@ class Gdc extends Component {
               <p>The Raleigh-Durham GDC's projects currently include:</p>
               <ul>
                 <li>Organizing to counter the resurgent movements of white supremacists, neo-Confederates, and the  'alt-right'</li>
-                <li>Community-based food distribution (with Workers Feeding Workers)</li>
+                <li>Community-based food distribution</li>
                 <li>Campaigns for building renters' power against landlords</li>
                 <li>Organizing to defend people from state and right-wing repression</li>
               </ul>
