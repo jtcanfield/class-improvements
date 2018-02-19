@@ -135,6 +135,24 @@ iframe{
   text-align: left;
 }
 
+.announcements {
+  border: 2px solid red;
+}
+
+.announcements h5 {
+  color: black;
+}
+
+.announcements h4 a {
+  text-decoration: underline;
+  color: #0000EE;
+}
+
+.announcements h4 a:visited {
+  text-decoration: underline;
+  color: #551A8B;
+}
+
 .gdcfirstpara{
   display: flex;
   flex-direction: row;

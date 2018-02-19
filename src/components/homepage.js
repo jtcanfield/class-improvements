@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Announcement from './Announcement.js';
 import news from "../data/news.json";
 
 class Homepage extends Component {
@@ -38,7 +39,7 @@ class Homepage extends Component {
       let key = `news${i}`;
       return (
         <div key={key}>
-          <p>
+          <p className="leftaligned">
             <a href={x.link} target="_blank" rel="noopener noreferrer">
             {x.title}
             </a><br/>
@@ -50,6 +51,7 @@ class Homepage extends Component {
     return (
       <div className="Homepage component" itemScope itemType="http://schema.org/WebPage">
         <div itemScope itemProp="mainContentOfPage">
+          <Announcement/>
           <h4 className="leftaligned">
             Recent News
           </h4>
