@@ -230,28 +230,27 @@ iframe{
 /* End Subcommittees */
 
 /* News */
-.newsstyles{
+.newsstyles, .noShowButton{
   display:none;
 }
-/* .newsstyles:nth-child(-n+4){
-  display:block;
-} */
 .showMoreButton{
   cursor: pointer;
   width: 100%;
-  padding-top: 30px;
-  /* background-color: #DBDBDB; */
   color: #847878;
+  border-bottom: 2px solid red;
+  /* padding-top: 30px; */
+  /* background-color: #DBDBDB; */
+  /* border-left: 2px solid red; */
+  /* border-right: 2px solid red; */
+}
+.showMoreArrow{
   border-left: 2px solid red;
   border-right: 2px solid red;
-  border-bottom: 2px solid red;
+  color: red;
 }
 .showMoreButton:hover{
   /* background-color: #999999; */
   /* color: white; */
-}
-.noShowButton{
-  display: none
 }
 /* End News */
 

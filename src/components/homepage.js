@@ -74,7 +74,7 @@ class Homepage extends Component {
             <div className={this.state.initdropdown ? ("showMoreButton") : ("noShowButton")}
               onClick={this.showMoreArticles}>
               <div>Show More</div>
-              <div>▼</div>
+              <div className="showMoreArrow">▼</div>
             </div>
           </div>
           <h4 className="leftaligned">
