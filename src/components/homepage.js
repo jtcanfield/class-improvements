@@ -5,7 +5,7 @@ import news from "../data/news.json";
 class Homepage extends Component {
   constructor(props) {
     super(props);
-    this.state = { width: '0', height: '0', initdropdown: true, numberShown: 4};
+    this.state = { width: '0', height: '0', initdropdown: true, numberShown: 5};
   }
   componentWillMount(){
     if (window.innerWidth <= 640){
@@ -15,7 +15,7 @@ class Homepage extends Component {
   }
   showMoreArticles = () => {
     this.setState(prevState => {
-      return {numberShown: prevState.numberShown + 4}
+      return {numberShown: prevState.numberShown + 5}
     });
   }
   componentDidUpdate(){

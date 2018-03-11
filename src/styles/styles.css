@@ -240,11 +240,15 @@ iframe{
   cursor: pointer;
   width: 100%;
   padding-top: 30px;
-  background-color: #DBDBDB;
+  /* background-color: #DBDBDB; */
+  color: #847878;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
 }
 .showMoreButton:hover{
-  background-color: #999999;
-  color: white;
+  /* background-color: #999999; */
+  /* color: white; */
 }
 .noShowButton{
   display: none
