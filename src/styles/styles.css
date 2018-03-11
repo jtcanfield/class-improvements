@@ -229,6 +229,28 @@ iframe{
 }
 /* End Subcommittees */
 
+/* News */
+.newsstyles{
+  display:none;
+}
+/* .newsstyles:nth-child(-n+4){
+  display:block;
+} */
+.showMoreButton{
+  cursor: pointer;
+  width: 100%;
+  padding-top: 30px;
+  background-color: #DBDBDB;
+}
+.showMoreButton:hover{
+  background-color: #999999;
+  color: white;
+}
+.noShowButton{
+  display: none
+}
+/* End News */
+
 @media (max-width: 640px) {
   /* Begin Subcommittees */
   .dropdownMenu{
