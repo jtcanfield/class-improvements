@@ -240,13 +240,28 @@ iframe{
   border-bottom: 2px solid red;
   /* padding-top: 30px; */
   /* background-color: #DBDBDB; */
-  /* border-left: 2px solid red; */
-  /* border-right: 2px solid red; */
-}
-.showMoreArrow{
   border-left: 2px solid red;
   border-right: 2px solid red;
+  border-radius: 10px;
+  overflow: visible;
+}
+.showMoreText{
+  display: block;
+  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1); /* Safari and Chrome */
+  -moz-transform: scale(1.1, 1.1); /* Firefox */
+  -ms-transform: scale(1.1, 1.1); /* IE 9+ */
+  -o-transform: scale(1.1, 1.1); /* Opera */
+  background-color:#fff;
+}
+.showMoreArrow{
   color: red;
+  display: block;
+  transform: scale(1, 0.5);
+  -webkit-transform: scale(1, 0.5); /* Safari and Chrome */
+  -moz-transform: scale(1, 0.5); /* Firefox */
+  -ms-transform: scale(1, 0.5); /* IE 9+ */
+  -o-transform: scale(1, 0.5); /* Opera */
 }
 .showMoreButton:hover{
   /* background-color: #999999; */
