@@ -4,25 +4,36 @@ class Announcement extends Component {
   render() {
     return (
       <div className="announcements">
-        <h3>
-          Important Announcement
-        </h3>
 
-        <h5>
-          Fellow Workers,
-        </h5>
-
-        <h5 className="leftaligned p-2">
-          The Raleigh-Durham IWW needs your help. A Fellow Worker involved in a local workplace organizing campaign has been fired and is in need of immediate financial assistance. Their family is facing eviction on February 24.
-        </h5>
-
-        <h5 className="leftaligned p-2">
-          The organizing campaign has not gone public so we are trying to be discrete and not using the worker's name in this appeal.
+        <h5 className="p-2">
+          The Raleigh-Durham IWW is hosting an Organizer Training 101 on April 14-15!
         </h5>
 
         <h4 className="p-2">
-          <a href="https://www.paypal.me/rdiwwgmb" target="_blank" rel="noopener noreferrer">
-            If you are able, please click here to make a donation.
+          <a href="https://goo.gl/forms/h3Xapr3POGJ6JI7w1" target="_blank" rel="noopener noreferrer">
+            Register Now
+          </a>
+        </h4>
+
+        <p className="leftaligned px-3 py-1">
+          The Organizer Training 101 (OT 101) is a two day event in Chapel Hill where two experienced workplace organizers share the IWW's strategy for organizing your workplace.
+          You will learn legal and practical advice for strikes and other tactics that the IWW has been practicing for over 100 years.
+          Free food will be provided by
+          <a href="https://rdiww.org/wfw" target="_blank" rel="noopener noreferrer">
+            Workers Feeding Workers!
+          </a>
+          Free childcare will also be provided.
+          The training is 8 hours each day, so please contact us if we can help you with anything.
+        </p>
+
+        <p className="leftaligned px-3 py-1">
+          The IWW is committed to helping workers organize to win demands and change the balance of power in their workplaces.
+          The Organizer Training will give you the tools, tactics, and strategies to build solidarity with your coworkers and take action to make real changes at your job.
+        </p>
+
+        <h4 className="p-2">
+          <a href="https://goo.gl/forms/h3Xapr3POGJ6JI7w1" target="_blank" rel="noopener noreferrer">
+            Click here to Register!
           </a>
         </h4>
       </div>

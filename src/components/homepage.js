@@ -66,6 +66,10 @@ class Homepage extends Component {
             display:block;
           }
         `}</style>
+        <h4 className="leftaligned">
+          Upcoming Event!
+        </h4>
+        <Announcement/>
           <h4 className="leftaligned">
             Recent News
           </h4>

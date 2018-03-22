@@ -137,6 +137,7 @@ iframe{
 
 .announcements {
   border: 2px solid red;
+  border-radius: 10px;
 }
 
 .announcements h5 {
@@ -151,6 +152,11 @@ iframe{
 .announcements h4 a:visited {
   text-decoration: underline;
   color: #551A8B;
+}
+
+.announcements a {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .gdcfirstpara{
