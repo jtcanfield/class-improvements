@@ -45,15 +45,30 @@ class Homepage extends Component {
         "allowTransparency":"true",
       }
     }
-    let newsArticles = news.map((x, i) =>{
+    let dateSet = new Set();
+    let newsArticles = news.map((article, i) =>{
       let key = `news${i}`;
+      let date = new Date(article.datePublished);
+      let monthHeader = article.datePublished.split(' ')[0]+' '+date.getFullYear();
+      if (dateSet.has(monthHeader)) {
+        monthHeader = false;
+      };
+      dateSet.add(monthHeader);
       return (
         <div key={key} className={this.state.initdropdown ? ("newsstyles") : ("")}>
-          <p className="leftaligned">
-            <a href={x.link} target="_blank" rel="noopener noreferrer">
-            {x.title}
-            </a><br/>
-            {x.source} - {x.datePublished}
+        {monthHeader ? (
+          <p className="leftaligned bg-danger text-white p-2 my-1">
+            {monthHeader}
+          </p>
+        ) : (<div></div>)}
+          <p className="leftaligned p-1 m-0 newsArticle">
+            <a href={article.link} target="_blank" rel="noopener noreferrer">
+              {article.title}
+            </a>
+            <br/>
+            <small>
+            {article.source} - {article.datePublished.split(' ')[0]} {date.getDate()}, {date.getFullYear()}
+            </small>
           </p>
         </div>
       )

@@ -239,6 +239,11 @@ iframe{
 .newsstyles, .noShowButton{
   display:none;
 }
+
+.newsArticle:hover {
+  background-color: #f9e3e3;
+}
+
 .showMoreButton{
   cursor: pointer;
   width: 100%;
