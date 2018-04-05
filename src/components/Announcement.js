@@ -22,9 +22,7 @@ class Announcement extends Component {
           <a href="https://rdiww.org/wfw" target="_blank" rel="noopener noreferrer">
             Workers Feeding Workers!
           </a>
-          Free childcare will also be provided.
-          If you need a ride, we have rides avaiable.
-          We have places for you to stay if you are coming from out of state.
+          Free childcare, rides, and housing will also be provided.
           The training is 8 hours each day, so please contact us if we can help you with anything.
         </p>
 
