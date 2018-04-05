@@ -23,6 +23,8 @@ class Announcement extends Component {
             Workers Feeding Workers!
           </a>
           Free childcare will also be provided.
+          If you need a ride, we have rides avaiable.
+          We have places for you to stay if you are coming from out of state.
           The training is 8 hours each day, so please contact us if we can help you with anything.
         </p>
 
