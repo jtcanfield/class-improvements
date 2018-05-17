@@ -6,17 +6,17 @@ class Announcement extends Component {
       <div className="announcements">
 
         <h5 className="p-2">
-          The Raleigh-Durham IWW is hosting an Organizer Training 101 on April 14-15!
+          The Raleigh-Durham IWW is hosting an Organizer Training 101 on July 14-15!
         </h5>
 
         <h4 className="p-2">
-          <a href="https://goo.gl/forms/h3Xapr3POGJ6JI7w1" target="_blank" rel="noopener noreferrer">
+          <a href="https://goo.gl/forms/KEQoPHjBz1Rz7Y3d2" target="_blank" rel="noopener noreferrer">
             Register Now
           </a>
         </h4>
 
         <p className="leftaligned px-3 py-1">
-          The Organizer Training 101 (OT 101) is a two day event at 141 Providence Rd, Chapel Hill, NC where two experienced workplace organizers share the IWW's strategy for organizing your workplace.
+          The Organizer Training 101 (OT 101) is a two day event (Location TBD but will be in the Triangle area), where two experienced workplace organizers share the IWW's strategy for organizing your workplace.
           You will learn legal and practical advice for strikes and other tactics that the IWW has been practicing for over 100 years.
           Free food will be provided by
           <a href="https://rdiww.org/wfw" target="_blank" rel="noopener noreferrer">
@@ -32,7 +32,7 @@ class Announcement extends Component {
         </p>
 
         <h4 className="p-2">
-          <a href="https://goo.gl/forms/h3Xapr3POGJ6JI7w1" target="_blank" rel="noopener noreferrer">
+          <a href="https://goo.gl/forms/KEQoPHjBz1Rz7Y3d2" target="_blank" rel="noopener noreferrer">
             Click here to Register!
           </a>
         </h4>
