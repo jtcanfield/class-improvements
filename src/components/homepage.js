@@ -84,7 +84,7 @@ class Homepage extends Component {
         {/*<h4 className="leftaligned">
           Upcoming Event!
         </h4>*/}
-        <Announcement/>
+        {/* <Announcement/> */}
           <h4 className="leftaligned">
             Recent News
           </h4>
