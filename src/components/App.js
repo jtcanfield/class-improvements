@@ -23,7 +23,6 @@ import {init as firebaseInit} from './javascripts/firebase.js'
 const store = createStore(
     allReducers,
 );
-
 class App extends Component {
   constructor(props) {
     super(props)
@@ -51,6 +50,9 @@ class App extends Component {
               <Route path="/success" render={(props) => ( <Duestaken/> )}/>
               <Route path="/sitemap" render={(props) => ( <SitemapDownload/> )}/>
               <Route path="/home" render={(props) => ( <Homepage/> )}/>
+              <Route path="/sitemap.xml" onEnter={() => window.location.reload()} />
+              <Route path="/robots.txt" onEnter={() => window.location.reload()} />
+              <Route path="/manifest.json" onEnter={() => window.location.reload()} />
               <Route path="" render={(props) => ( <Redirectpage/> )}/>
             </Switch>
           </BaseLayout>
